@@ -25,7 +25,11 @@ export function NavActions({
         >
           {currentLang.toUpperCase()}
         </Link>
-        <a className="text-on-surface-variant hover:text-primary transition-all duration-200 flex items-center justify-center w-6 h-6" href="#" title="Source Code">
+        <a
+          className="flex h-6 w-6 items-center justify-center text-on-surface-variant transition-all duration-200 hover:text-primary"
+          href="#"
+          title={actions.sourceCode}
+        >
           <span className="text-xs">&lt;/&gt;</span>
         </a>
       </div>

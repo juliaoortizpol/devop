@@ -1,8 +1,8 @@
 {
   "en": {
     "metadata": {
-      "title": "Julio A. Ortiz Pol | Portfolio",
-      "description": "Senior Full-Stack Software Engineer Portfolio"
+      "title": "Julio A. Ortiz Pol | Senior Full-Stack Engineer",
+      "description": "Senior Full-Stack Engineer portfolio focused on frontend, mobile, and backend architectures."
     },
     "nav": {
       "logo": "JAOP.",
@@ -18,14 +18,209 @@
       }
     },
     "home": {
-      "eyebrow": "Portfolio Under Construction",
-      "headline": "Building my scalable portfolio"
+      "hero": {
+        "availability": "Available for new opportunities",
+        "name": "Julio A. Ortiz Pol",
+        "summary": [
+          {
+            "text": "Expertise in "
+          },
+          {
+            "text": "Front-End",
+            "tone": "primary"
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "Mobile (React Native)",
+            "tone": "secondary"
+          },
+          {
+            "text": ", and "
+          },
+          {
+            "text": "Backend (NestJS)",
+            "tone": "tertiary"
+          },
+          {
+            "text": " architectures. Building high-performance digital ecosystems."
+          }
+        ],
+        "primaryCta": "Get in touch",
+        "secondaryCta": "View my work",
+        "stats": [
+          {
+            "value": "+5",
+            "label": "Years Software Engineer",
+            "tone": "primary"
+          },
+          {
+            "value": "+5",
+            "label": "Years Frontend",
+            "tone": "secondary"
+          },
+          {
+            "value": "+3",
+            "label": "Years Backend",
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "experience": {
+        "title": "Experience",
+        "roles": [
+          {
+            "title": "Senior Software Engineer",
+            "company": "Qik Banco Digital",
+            "period": "Jan 2022 — Present",
+            "description": "Architecting core banking features for the first neo-bank in the DR. Leading frontend initiatives with a focus on performance, accessibility, and high-security transactional flows.",
+            "skills": ["React", "Next.js", "Typescript", "Redux"],
+            "tone": "primary"
+          },
+          {
+            "title": "Full Stack Developer",
+            "company": "BairesDev",
+            "period": "Mar 2020 — Dec 2021",
+            "description": "Collaborated with Fortune 500 clients to deliver scalable SaaS solutions. Focused on Node.js microservices and complex state management in React applications.",
+            "skills": ["Node.js", "NestJS", "React Native", "PostgreSQL"],
+            "tone": "secondary"
+          },
+          {
+            "title": "Software Developer",
+            "company": "NEXUS GROUP",
+            "period": "Jun 2018 — Feb 2020",
+            "description": "Developed internal management systems and improved customer-facing legacy portals using modern JavaScript frameworks.",
+            "skills": ["JavaScript", "CSS3", "MySQL"],
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "skills": {
+        "title": "Technical Arsenal",
+        "description": "The tools I use to bring ideas to production.",
+        "categories": [
+          {
+            "title": "Frontend",
+            "icon": "spark",
+            "tone": "primary",
+            "skills": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Storybook"]
+          },
+          {
+            "title": "Backend & DB",
+            "icon": "database",
+            "tone": "secondary",
+            "skills": ["Node.js", "NestJS", "PostgreSQL", "Redis", "GraphQL", "Docker"]
+          },
+          {
+            "title": "Mobile",
+            "icon": "mobile",
+            "tone": "tertiary",
+            "skills": ["React Native", "Expo", "Mobile UX", "Push Notifications", "Biometrics"]
+          },
+          {
+            "title": "Tools & Arch",
+            "icon": "architecture",
+            "tone": "muted",
+            "skills": ["AWS", "CI/CD", "Microservices", "TDD", "GitOps", "DDD"]
+          }
+        ]
+      },
+      "projects": {
+        "title": "Featured Projects",
+        "items": [
+          {
+            "category": "Fintech",
+            "title": "FinTech Dashboard Analytics",
+            "description": "A real-time data processing platform for financial transaction monitoring with 99.9% uptime and microsecond latency.",
+            "image": "/stitch/project-1.jpg",
+            "imageAlt": "Dark fintech analytics dashboard with glowing charts and glassmorphic panels.",
+            "cta": "View Case Study",
+            "tone": "primary"
+          },
+          {
+            "category": "Mobile",
+            "title": "P2P Crypto Wallet Shell",
+            "description": "Cross-platform mobile wallet built with React Native and Expo, implementing biometrics and hardware-level encryption.",
+            "image": "/stitch/project-2.jpg",
+            "imageAlt": "Dark mobile wallet interface with lavender accents and secure payment flow.",
+            "cta": "View Source",
+            "tone": "secondary"
+          }
+        ]
+      },
+      "writing": {
+        "title": "Latest Writing",
+        "archiveCta": "View Archive",
+        "items": [
+          {
+            "date": "Oct 24, 2024",
+            "readTime": "8 min read",
+            "title": "Mastering NestJS Microservices at Scale",
+            "description": "Exploring common pitfalls and architectural wins when moving from monolith to a message-based architecture...",
+            "cta": "Read Article",
+            "tone": "primary"
+          },
+          {
+            "date": "Sep 12, 2024",
+            "readTime": "5 min read",
+            "title": "Next.js 15: The Good, The Bad, and The Server Components",
+            "description": "Deep dive into the latest hydration strategies and how they impact LCP in real-world dashboard scenarios...",
+            "cta": "Read Article",
+            "tone": "secondary"
+          },
+          {
+            "date": "Aug 05, 2024",
+            "readTime": "12 min read",
+            "title": "Why I Still Choose React Native in 2024",
+            "description": "Comparing performance benchmarks across Flutter, Kotlin Multiplatform, and the current RN ecosystem...",
+            "cta": "Read Article",
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "cta": {
+        "headlinePrefix": "Ready to build something",
+        "headlineEmphasis": "exceptional",
+        "primaryCta": "Email Me",
+        "socialLinks": [
+          {
+            "label": "Email",
+            "href": "mailto:hello@example.com"
+          },
+          {
+            "label": "GitHub",
+            "href": "#"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "#"
+          }
+        ]
+      },
+      "footer": {
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "#"
+          },
+          {
+            "label": "GitHub",
+            "href": "#"
+          },
+          {
+            "label": "Twitter",
+            "href": "#"
+          }
+        ],
+        "copyright": "© 2026 Julio A. Ortiz Pol. Designed & Built with React & Tailwind."
+      }
     }
   },
   "es": {
     "metadata": {
-      "title": "Julio A. Ortiz Pol | Portafolio",
-      "description": "Portafolio de Ingeniero Senior Full-Stack"
+      "title": "Julio A. Ortiz Pol | Ingeniero Full-Stack Senior",
+      "description": "Portafolio de Ingeniero Full-Stack Senior enfocado en arquitecturas frontend, mobile y backend."
     },
     "nav": {
       "logo": "JAOP.",
@@ -41,8 +236,203 @@
       }
     },
     "home": {
-      "eyebrow": "Portafolio en construcción",
-      "headline": "Construyendo mi portafolio escalable"
+      "hero": {
+        "availability": "Disponible para nuevas oportunidades",
+        "name": "Julio A. Ortiz Pol",
+        "summary": [
+          {
+            "text": "Experiencia en "
+          },
+          {
+            "text": "Front-End",
+            "tone": "primary"
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "Mobile (React Native)",
+            "tone": "secondary"
+          },
+          {
+            "text": " y "
+          },
+          {
+            "text": "Backend (NestJS)",
+            "tone": "tertiary"
+          },
+          {
+            "text": ". Construyendo ecosistemas digitales de alto rendimiento."
+          }
+        ],
+        "primaryCta": "Hablemos",
+        "secondaryCta": "Ver proyectos",
+        "stats": [
+          {
+            "value": "+5",
+            "label": "Años como Software Engineer",
+            "tone": "primary"
+          },
+          {
+            "value": "+5",
+            "label": "Años en Frontend",
+            "tone": "secondary"
+          },
+          {
+            "value": "+3",
+            "label": "Años en Backend",
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "experience": {
+        "title": "Experiencia",
+        "roles": [
+          {
+            "title": "Senior Software Engineer",
+            "company": "Qik Banco Digital",
+            "period": "Ene 2022 — Presente",
+            "description": "Arquitectando funcionalidades bancarias clave para el primer neo-banco de RD. Liderando iniciativas frontend con foco en rendimiento, accesibilidad y flujos transaccionales de alta seguridad.",
+            "skills": ["React", "Next.js", "Typescript", "Redux"],
+            "tone": "primary"
+          },
+          {
+            "title": "Full Stack Developer",
+            "company": "BairesDev",
+            "period": "Mar 2020 — Dic 2021",
+            "description": "Colaboré con clientes Fortune 500 para entregar soluciones SaaS escalables, con foco en microservicios Node.js y manejo complejo de estado en aplicaciones React.",
+            "skills": ["Node.js", "NestJS", "React Native", "PostgreSQL"],
+            "tone": "secondary"
+          },
+          {
+            "title": "Software Developer",
+            "company": "NEXUS GROUP",
+            "period": "Jun 2018 — Feb 2020",
+            "description": "Desarrollé sistemas internos de gestión y modernicé portales legacy orientados al cliente usando frameworks modernos de JavaScript.",
+            "skills": ["JavaScript", "CSS3", "MySQL"],
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "skills": {
+        "title": "Arsenal Técnico",
+        "description": "Las herramientas que uso para llevar ideas a producción.",
+        "categories": [
+          {
+            "title": "Frontend",
+            "icon": "spark",
+            "tone": "primary",
+            "skills": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Storybook"]
+          },
+          {
+            "title": "Backend & DB",
+            "icon": "database",
+            "tone": "secondary",
+            "skills": ["Node.js", "NestJS", "PostgreSQL", "Redis", "GraphQL", "Docker"]
+          },
+          {
+            "title": "Mobile",
+            "icon": "mobile",
+            "tone": "tertiary",
+            "skills": ["React Native", "Expo", "Mobile UX", "Push Notifications", "Biometrics"]
+          },
+          {
+            "title": "Tools & Arch",
+            "icon": "architecture",
+            "tone": "muted",
+            "skills": ["AWS", "CI/CD", "Microservices", "TDD", "GitOps", "DDD"]
+          }
+        ]
+      },
+      "projects": {
+        "title": "Proyectos Destacados",
+        "items": [
+          {
+            "category": "Fintech",
+            "title": "FinTech Dashboard Analytics",
+            "description": "Una plataforma de procesamiento de datos en tiempo real para monitoreo de transacciones financieras con 99.9% de uptime y latencia de microsegundos.",
+            "image": "/stitch/project-1.jpg",
+            "imageAlt": "Dashboard fintech oscuro con gráficos luminosos y paneles glassmorphism.",
+            "cta": "Ver caso de estudio",
+            "tone": "primary"
+          },
+          {
+            "category": "Mobile",
+            "title": "P2P Crypto Wallet Shell",
+            "description": "Wallet móvil multiplataforma construida con React Native y Expo, implementando biometría y cifrado a nivel de hardware.",
+            "image": "/stitch/project-2.jpg",
+            "imageAlt": "Interfaz móvil de wallet oscura con acentos lavanda y flujo de pago seguro.",
+            "cta": "Ver código",
+            "tone": "secondary"
+          }
+        ]
+      },
+      "writing": {
+        "title": "Últimos Artículos",
+        "archiveCta": "Ver archivo",
+        "items": [
+          {
+            "date": "24 Oct, 2024",
+            "readTime": "8 min",
+            "title": "Dominando microservicios NestJS a escala",
+            "description": "Explorando errores comunes y decisiones arquitectónicas al migrar de un monolito a una arquitectura basada en mensajes...",
+            "cta": "Leer artículo",
+            "tone": "primary"
+          },
+          {
+            "date": "12 Sep, 2024",
+            "readTime": "5 min",
+            "title": "Next.js 15: lo bueno, lo difícil y Server Components",
+            "description": "Una mirada profunda a las estrategias de hidratación y su impacto en LCP en dashboards reales...",
+            "cta": "Leer artículo",
+            "tone": "secondary"
+          },
+          {
+            "date": "05 Ago, 2024",
+            "readTime": "12 min",
+            "title": "Por qué sigo eligiendo React Native en 2024",
+            "description": "Comparando benchmarks de rendimiento entre Flutter, Kotlin Multiplatform y el ecosistema actual de RN...",
+            "cta": "Leer artículo",
+            "tone": "tertiary"
+          }
+        ]
+      },
+      "cta": {
+        "headlinePrefix": "¿Listo para construir algo",
+        "headlineEmphasis": "excepcional",
+        "primaryCta": "Envíame un email",
+        "socialLinks": [
+          {
+            "label": "Email",
+            "href": "mailto:hello@example.com"
+          },
+          {
+            "label": "GitHub",
+            "href": "#"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "#"
+          }
+        ]
+      },
+      "footer": {
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "#"
+          },
+          {
+            "label": "GitHub",
+            "href": "#"
+          },
+          {
+            "label": "Twitter",
+            "href": "#"
+          }
+        ],
+        "copyright": "© 2026 Julio A. Ortiz Pol. Diseñado y construido con React & Tailwind."
+      }
     }
   }
 }
