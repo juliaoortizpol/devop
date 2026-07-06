@@ -29,9 +29,12 @@ export function NavActions({
           <span className="text-xs">&lt;/&gt;</span>
         </a>
       </div>
-      <button className="px-md py-xs bg-primary text-on-primary rounded-lg font-label-sm hover:scale-105 transition-all duration-200 shadow-lg shadow-primary/20">
+      <a
+        className="px-md py-xs bg-primary text-on-primary rounded-lg font-label-sm hover:scale-105 transition-all duration-200 shadow-lg shadow-primary/20"
+        href="#resume"
+      >
         {actions.resume}
-      </button>
+      </a>
     </div>
   );
 }

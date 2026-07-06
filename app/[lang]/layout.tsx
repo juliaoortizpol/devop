@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
-import { isLocale, locales, type Locale } from "@/lib/dictionary";
+import { getDictionary, isLocale, locales, type Locale } from "@/lib/dictionary";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -15,13 +15,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Julio A. Ortiz Pol | Portfolio",
-  description: "Senior Full-Stack Software Engineer Portfolio",
-};
+export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!isLocale(lang)) {
+    return {};
+  }
+
+  const { metadata } = await getDictionary(lang);
+
+  return metadata;
 }
 
 export default async function RootLayout({

@@ -1,0 +1,48 @@
+{
+  "en": {
+    "metadata": {
+      "title": "Julio A. Ortiz Pol | Portfolio",
+      "description": "Senior Full-Stack Software Engineer Portfolio"
+    },
+    "nav": {
+      "logo": "JAOP.",
+      "links": {
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "blog": "Blog"
+      },
+      "actions": {
+        "resume": "Resume",
+        "sourceCode": "Source Code"
+      }
+    },
+    "home": {
+      "eyebrow": "Portfolio Under Construction",
+      "headline": "Building my scalable portfolio"
+    }
+  },
+  "es": {
+    "metadata": {
+      "title": "Julio A. Ortiz Pol | Portafolio",
+      "description": "Portafolio de Ingeniero Senior Full-Stack"
+    },
+    "nav": {
+      "logo": "JAOP.",
+      "links": {
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "blog": "Blog"
+      },
+      "actions": {
+        "resume": "Currículum",
+        "sourceCode": "Código fuente"
+      }
+    },
+    "home": {
+      "eyebrow": "Portafolio en construcción",
+      "headline": "Construyendo mi portafolio escalable"
+    }
+  }
+}

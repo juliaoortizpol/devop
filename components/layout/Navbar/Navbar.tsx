@@ -8,8 +8,8 @@ interface NavbarProps {
   lang: Locale;
 }
 
-export function Navbar({ lang }: NavbarProps) {
-  const { logo, links, actions } = getDictionary(lang).nav;
+export async function Navbar({ lang }: NavbarProps) {
+  const { logo, links, actions } = (await getDictionary(lang)).nav;
   const alternateLang = lang === "en" ? "es" : "en";
 
   return (
