@@ -1,0 +1,30 @@
+{
+  "en": {
+    "nav": {
+      "logo": "JAOP.",
+      "links": {
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "blog": "Blog"
+      },
+      "actions": {
+        "resume": "Resume"
+      }
+    }
+  },
+  "es": {
+    "nav": {
+      "logo": "JAOP.",
+      "links": {
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "blog": "Blog"
+      },
+      "actions": {
+        "resume": "Currículum"
+      }
+    }
+  }
+}
