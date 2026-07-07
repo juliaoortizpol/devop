@@ -61,7 +61,7 @@
             "tone": "secondary"
           },
           {
-            "value": "+3",
+            "value": "+5",
             "label": "Years Backend",
             "tone": "tertiary"
           }
@@ -75,7 +75,12 @@
             "company": "Qik Banco Digital",
             "period": "Jan 2022 — Present",
             "description": "Architecting core banking features for the first neo-bank in the DR. Leading frontend initiatives with a focus on performance, accessibility, and high-security transactional flows.",
-            "skills": ["React", "Next.js", "Typescript", "Redux"],
+            "skills": [
+              "React",
+              "Next.js",
+              "Typescript",
+              "Redux"
+            ],
             "tone": "primary"
           },
           {
@@ -83,7 +88,12 @@
             "company": "BairesDev",
             "period": "Mar 2020 — Dec 2021",
             "description": "Collaborated with Fortune 500 clients to deliver scalable SaaS solutions. Focused on Node.js microservices and complex state management in React applications.",
-            "skills": ["Node.js", "NestJS", "React Native", "PostgreSQL"],
+            "skills": [
+              "Node.js",
+              "NestJS",
+              "React Native",
+              "PostgreSQL"
+            ],
             "tone": "secondary"
           },
           {
@@ -91,7 +101,11 @@
             "company": "NEXUS GROUP",
             "period": "Jun 2018 — Feb 2020",
             "description": "Developed internal management systems and improved customer-facing legacy portals using modern JavaScript frameworks.",
-            "skills": ["JavaScript", "CSS3", "MySQL"],
+            "skills": [
+              "JavaScript",
+              "CSS3",
+              "MySQL"
+            ],
             "tone": "tertiary"
           }
         ]
@@ -104,25 +118,52 @@
             "title": "Frontend",
             "icon": "spark",
             "tone": "primary",
-            "skills": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Storybook"]
+            "skills": [
+              "React.js",
+              "Next.js",
+              "Tailwind CSS",
+              "TypeScript",
+              "Framer Motion",
+              "Storybook"
+            ]
           },
           {
             "title": "Backend & DB",
             "icon": "database",
             "tone": "secondary",
-            "skills": ["Node.js", "NestJS", "PostgreSQL", "Redis", "GraphQL", "Docker"]
+            "skills": [
+              "Node.js",
+              "NestJS",
+              "PostgreSQL",
+              "Redis",
+              "GraphQL",
+              "Docker"
+            ]
           },
           {
             "title": "Mobile",
             "icon": "mobile",
             "tone": "tertiary",
-            "skills": ["React Native", "Expo", "Mobile UX", "Push Notifications", "Biometrics"]
+            "skills": [
+              "React Native",
+              "Expo",
+              "Mobile UX",
+              "Push Notifications",
+              "Biometrics"
+            ]
           },
           {
             "title": "Tools & Arch",
             "icon": "architecture",
             "tone": "muted",
-            "skills": ["AWS", "CI/CD", "Microservices", "TDD", "GitOps", "DDD"]
+            "skills": [
+              "AWS",
+              "CI/CD",
+              "Microservices",
+              "TDD",
+              "GitOps",
+              "DDD"
+            ]
           }
         ]
       },
@@ -293,7 +334,12 @@
             "company": "Qik Banco Digital",
             "period": "Ene 2022 — Presente",
             "description": "Arquitectando funcionalidades bancarias clave para el primer neo-banco de RD. Liderando iniciativas frontend con foco en rendimiento, accesibilidad y flujos transaccionales de alta seguridad.",
-            "skills": ["React", "Next.js", "Typescript", "Redux"],
+            "skills": [
+              "React",
+              "Next.js",
+              "Typescript",
+              "Redux"
+            ],
             "tone": "primary"
           },
           {
@@ -301,7 +347,12 @@
             "company": "BairesDev",
             "period": "Mar 2020 — Dic 2021",
             "description": "Colaboré con clientes Fortune 500 para entregar soluciones SaaS escalables, con foco en microservicios Node.js y manejo complejo de estado en aplicaciones React.",
-            "skills": ["Node.js", "NestJS", "React Native", "PostgreSQL"],
+            "skills": [
+              "Node.js",
+              "NestJS",
+              "React Native",
+              "PostgreSQL"
+            ],
             "tone": "secondary"
           },
           {
@@ -309,7 +360,11 @@
             "company": "NEXUS GROUP",
             "period": "Jun 2018 — Feb 2020",
             "description": "Desarrollé sistemas internos de gestión y modernicé portales legacy orientados al cliente usando frameworks modernos de JavaScript.",
-            "skills": ["JavaScript", "CSS3", "MySQL"],
+            "skills": [
+              "JavaScript",
+              "CSS3",
+              "MySQL"
+            ],
             "tone": "tertiary"
           }
         ]
@@ -322,25 +377,52 @@
             "title": "Frontend",
             "icon": "spark",
             "tone": "primary",
-            "skills": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Framer Motion", "Storybook"]
+            "skills": [
+              "React.js",
+              "Next.js",
+              "Tailwind CSS",
+              "TypeScript",
+              "Framer Motion",
+              "Storybook"
+            ]
           },
           {
             "title": "Backend & DB",
             "icon": "database",
             "tone": "secondary",
-            "skills": ["Node.js", "NestJS", "PostgreSQL", "Redis", "GraphQL", "Docker"]
+            "skills": [
+              "Node.js",
+              "NestJS",
+              "PostgreSQL",
+              "Redis",
+              "GraphQL",
+              "Docker"
+            ]
           },
           {
             "title": "Mobile",
             "icon": "mobile",
             "tone": "tertiary",
-            "skills": ["React Native", "Expo", "Mobile UX", "Push Notifications", "Biometrics"]
+            "skills": [
+              "React Native",
+              "Expo",
+              "Mobile UX",
+              "Push Notifications",
+              "Biometrics"
+            ]
           },
           {
             "title": "Tools & Arch",
             "icon": "architecture",
             "tone": "muted",
-            "skills": ["AWS", "CI/CD", "Microservices", "TDD", "GitOps", "DDD"]
+            "skills": [
+              "AWS",
+              "CI/CD",
+              "Microservices",
+              "TDD",
+              "GitOps",
+              "DDD"
+            ]
           }
         ]
       },

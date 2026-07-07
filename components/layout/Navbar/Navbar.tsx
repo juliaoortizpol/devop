@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { getDictionary, type Locale } from "@/lib/dictionary";
+import { HomeLogoLink } from "./HomeLogoLink";
 import { NavActions } from "./NavActions";
 import { NavLinks } from "./NavLinks";
 import { ScrollNavWrapper } from "./ScrollNavWrapper";
@@ -15,12 +15,7 @@ export async function Navbar({ lang }: NavbarProps) {
   return (
     <ScrollNavWrapper>
       <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter h-full">
-        <Link
-          href={`/${lang}`}
-          className="font-display-lg text-display-lg-mobile bg-gradient-to-r from-primary to-tertiary bg-clip-text text-transparent transition-transform duration-200 hover:scale-105"
-        >
-          {logo}
-        </Link>
+        <HomeLogoLink href={`/${lang}`} label={logo} />
 
         <NavLinks links={links} />
 

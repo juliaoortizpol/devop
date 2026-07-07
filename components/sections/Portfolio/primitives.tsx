@@ -37,11 +37,17 @@ export function TagList({ tags, large = false }: { tags: string[]; large?: boole
   );
 }
 
-export function SectionTitle({ title, accent }: { title: string; accent: string }) {
+export function SectionTitle({
+  title,
+  icon,
+}: {
+  title: string;
+  icon: React.ReactNode;
+}) {
   return (
     <div className="mb-xl flex items-center gap-sm">
-      <div className="rounded-lg bg-primary/10 p-xs text-label-sm font-label-sm text-primary">
-        {accent}
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        {icon}
       </div>
       <h2 className="font-display-lg text-display-lg-mobile text-on-surface">
         {title}

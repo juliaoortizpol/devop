@@ -1,6 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { defaultLocale, isLocale, locales } from "@/lib/dictionary";
 
+const adminRealm = "JAOP Portfolio Admin";
+
 function getPreferredLocale(request: NextRequest) {
   const acceptLanguage = request.headers.get("accept-language");
 
@@ -35,6 +37,20 @@ function getPreferredLocale(request: NextRequest) {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    if (!isAdminAuthorized(request)) {
+      return new NextResponse("Authentication required.", {
+        status: 401,
+        headers: {
+          "WWW-Authenticate": `Basic realm="${adminRealm}", charset="UTF-8"`,
+        },
+      });
+    }
+
+    return NextResponse.next();
+  }
+
   const pathnameHasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
@@ -47,6 +63,48 @@ export function proxy(request: NextRequest) {
   request.nextUrl.pathname = `/${locale}${pathname}`;
 
   return NextResponse.redirect(request.nextUrl);
+}
+
+function isAdminAuthorized(request: NextRequest) {
+  const credentials = getAdminCredentials();
+
+  if (!credentials) {
+    return false;
+  }
+
+  const authorization = request.headers.get("authorization");
+
+  if (!authorization?.startsWith("Basic ")) {
+    return false;
+  }
+
+  try {
+    const decoded = atob(authorization.replace("Basic ", ""));
+    const separatorIndex = decoded.indexOf(":");
+    const username = decoded.slice(0, separatorIndex);
+    const password = decoded.slice(separatorIndex + 1);
+
+    return (
+      username === credentials.username && password === credentials.password
+    );
+  } catch {
+    return false;
+  }
+}
+
+function getAdminCredentials() {
+  const username = process.env.ADMIN_USERNAME;
+  const password = process.env.ADMIN_PASSWORD;
+
+  if (username && password) {
+    return { username, password };
+  }
+
+  if (process.env.NODE_ENV !== "production") {
+    return { username: "admin", password: "admin" };
+  }
+
+  return null;
 }
 
 export const config = {

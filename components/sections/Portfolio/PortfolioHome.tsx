@@ -3,7 +3,6 @@ import { ContactSection } from "./ContactSection";
 import { ExperienceSection } from "./ExperienceSection";
 import { HeroSection } from "./HeroSection";
 import { PortfolioFooter } from "./PortfolioFooter";
-import { ProjectsAndWritingSection } from "./ProjectsAndWritingSection";
 import { SkillsSection } from "./SkillsSection";
 
 interface PortfolioHomeProps {
@@ -16,10 +15,6 @@ export function PortfolioHome({ content }: PortfolioHomeProps) {
       <HeroSection content={content.hero} />
       <ExperienceSection content={content.experience} />
       <SkillsSection content={content.skills} />
-      <ProjectsAndWritingSection
-        projects={content.projects}
-        writing={content.writing}
-      />
       <ContactSection content={content.cta} />
       <PortfolioFooter content={content.footer} />
     </main>
