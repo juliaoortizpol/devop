@@ -10,13 +10,24 @@ function getPreferredLocale(request: NextRequest) {
 
   const preferredLocales = acceptLanguage
     .split(",")
-    .map((value) => value.split(";")[0]?.trim().toLowerCase())
-    .filter(Boolean);
+    .map((value) => {
+      const [language, ...directives] = value.split(";");
+      const quality = directives
+        .map((directive) => directive.trim())
+        .find((directive) => directive.startsWith("q="))
+        ?.replace("q=", "");
+
+      return {
+        language: language?.trim().toLowerCase() ?? "",
+        quality: quality ? Number(quality) : 1,
+      };
+    })
+    .filter(({ language, quality }) => language && quality > 0)
+    .sort((a, b) => b.quality - a.quality);
 
   return (
-    preferredLocales.find((locale) => isLocale(locale)) ??
     preferredLocales
-      .map((locale) => locale.split("-")[0])
+      .map(({ language }) => language.split("-")[0])
       .find((locale) => isLocale(locale)) ??
     defaultLocale
   );
