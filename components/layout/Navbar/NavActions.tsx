@@ -28,7 +28,8 @@ export function NavActions({
       </div>
       <a
         className="px-md py-xs bg-primary text-on-primary rounded-lg font-label-sm hover:scale-105 transition-all duration-200 shadow-lg shadow-primary/20"
-        href="#resume"
+        download
+        href={actions.resumeHref}
       >
         {actions.resume}
       </a>

@@ -27,6 +27,7 @@ export interface LocaleContent {
     };
     actions: {
       resume: string;
+      resumeHref: string;
       sourceCode: string;
     };
   };
@@ -171,6 +172,11 @@ function assertPortfolioContent(value: unknown): asserts value is PortfolioConte
     assertString(
       getAt(localeContent, ["nav", "actions", "resume"]),
       "nav.actions.resume",
+      locale
+    );
+    assertString(
+      getAt(localeContent, ["nav", "actions", "resumeHref"]),
+      "nav.actions.resumeHref",
       locale
     );
     assertString(

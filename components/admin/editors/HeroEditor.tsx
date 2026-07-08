@@ -82,6 +82,19 @@ export function HeroEditor({ content, onChange }: HeroEditorProps) {
           value={content.home.hero.secondaryCta}
         />
       </div>
+      <Field
+        label="Resume Download URL"
+        onChange={(value) =>
+          onChange((current) => ({
+            ...current,
+            nav: {
+              ...current.nav,
+              actions: { ...current.nav.actions, resumeHref: value },
+            },
+          }))
+        }
+        value={content.nav.actions.resumeHref}
+      />
       <div className="grid grid-cols-1 gap-md md:grid-cols-3">
         {content.home.hero.stats.map((stat, index) => (
           <Field

@@ -14,6 +14,7 @@
       },
       "actions": {
         "resume": "Resume",
+        "resumeHref": "https://docs.google.com/document/d/1-AThkWMBOU4A-bcr7YHRfc5Q0-9x10QO9dg9nNND7Bw/export?format=pdf",
         "sourceCode": "Source Code"
       }
     },
@@ -287,6 +288,7 @@
       },
       "actions": {
         "resume": "Currículum",
+        "resumeHref": "https://docs.google.com/document/d/1T34afvPqcbFSIIBfYEDmfQ3rQzV2n0c37kdiUK_Cc5o/export?format=pdf",
         "sourceCode": "Código fuente"
       }
     },
