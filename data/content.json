@@ -1,8 +1,8 @@
 {
   "en": {
     "metadata": {
-      "title": "Julio A. Ortiz Pol | Senior Full-Stack Engineer",
-      "description": "Senior Full-Stack Engineer portfolio focused on frontend, mobile, and backend architectures."
+      "title": "Julio Antonio Ortiz Pol | Full-Stack Developer",
+      "description": "Full-Stack Developer and Software Engineer focused on fintech, digital banking, web, mobile, and microservices architectures."
     },
     "nav": {
       "logo": "JAOP.",
@@ -20,49 +20,49 @@
     "home": {
       "hero": {
         "availability": "Available for new opportunities",
-        "name": "Julio A. Ortiz Pol",
+        "name": "Julio Antonio Ortiz Pol",
         "summary": [
           {
-            "text": "Expertise in "
+            "text": "Full-Stack Developer and Software Engineer with 5+ years building "
           },
           {
-            "text": "Front-End",
+            "text": "fintech web platforms",
             "tone": "primary"
           },
           {
             "text": ", "
           },
           {
-            "text": "Mobile (React Native)",
+            "text": "mobile banking apps",
             "tone": "secondary"
           },
           {
             "text": ", and "
           },
           {
-            "text": "Backend (NestJS)",
+            "text": "microservices architectures",
             "tone": "tertiary"
           },
           {
-            "text": " architectures. Building high-performance digital ecosystems."
+            "text": " with React, React Native, NestJS, and TypeScript."
           }
         ],
         "primaryCta": "Get in touch",
         "secondaryCta": "View my work",
         "stats": [
           {
-            "value": "+5",
-            "label": "Years Software Engineer",
+            "value": "+8",
+            "label": "Years Software Engineering",
             "tone": "primary"
           },
           {
-            "value": "+5",
+            "value": "+7",
             "label": "Years Frontend",
             "tone": "secondary"
           },
           {
             "value": "+5",
-            "label": "Years Backend",
+            "label": "Years BackEnd",
             "tone": "tertiary"
           }
         ]
@@ -71,73 +71,86 @@
         "title": "Experience",
         "roles": [
           {
-            "title": "Senior Software Engineer",
+            "title": "Full-Stack Developer",
             "company": "Qik Banco Digital",
-            "period": "Jan 2022 — Present",
-            "description": "Architecting core banking features for the first neo-bank in the DR. Leading frontend initiatives with a focus on performance, accessibility, and high-security transactional flows.",
+            "period": "May 2023 - Present",
+            "description": "Develop and maintain critical back-office, mobile, and microservices features for a digital banking ecosystem, using NestJS and React Native while collaborating across product planning, UI design, and reusable component libraries.",
             "skills": [
-              "React",
-              "Next.js",
-              "Typescript",
-              "Redux"
+              "NestJS",
+              "React Native",
+              "Microservices",
+              "Digital Banking"
             ],
             "tone": "primary"
           },
           {
-            "title": "Full Stack Developer",
-            "company": "BairesDev",
-            "period": "Mar 2020 — Dec 2021",
-            "description": "Collaborated with Fortune 500 clients to deliver scalable SaaS solutions. Focused on Node.js microservices and complex state management in React applications.",
+            "title": "Full-Stack Developer",
+            "company": "Baires Dev",
+            "period": "September 2021 - May 2023",
+            "description": "Led scalable React web applications integrated with backend services and APIs, applying strong full-stack architecture practices, performance optimization, reusable components, API integration, data handling, and code review standards.",
             "skills": [
-              "Node.js",
-              "NestJS",
-              "React Native",
-              "PostgreSQL"
+              "React",
+              "REST APIs",
+              "GraphQL",
+              "State Management"
             ],
             "tone": "secondary"
           },
           {
-            "title": "Software Developer",
-            "company": "NEXUS GROUP",
-            "period": "Jun 2018 — Feb 2020",
-            "description": "Developed internal management systems and improved customer-facing legacy portals using modern JavaScript frameworks.",
+            "title": "Mobile & Front-end Developer and Java Services",
+            "company": "TEVOLV (Client: Temenos)",
+            "period": "September 2019 - October 2022",
+            "description": "Built mobile banking applications with React Native and Kony Banking Framework, led key Temenos Infinity feature work, and delivered secure financial-sector solutions with complex third-party API integrations.",
             "skills": [
-              "JavaScript",
-              "CSS3",
-              "MySQL"
+              "React Native",
+              "Kony Banking Framework",
+              "Temenos Infinity",
+              "API Integrations"
             ],
             "tone": "tertiary"
+          },
+          {
+            "title": "Software Engineering Intern",
+            "company": "Cervecería Nacional Dominicana",
+            "period": "September 2018 - September 2019",
+            "description": "Contributed to internal operational tools using React, supported users, and collaborated on technical documentation and ongoing software maintenance.",
+            "skills": [
+              "React",
+              "Technical Support",
+              "Documentation"
+            ],
+            "tone": "muted"
           }
         ]
       },
       "skills": {
-        "title": "Technical Arsenal",
-        "description": "The tools I use to bring ideas to production.",
+        "title": "Technical Skills",
+        "description": "Tools and practices I use to ship scalable web, mobile, and backend products.",
         "categories": [
           {
             "title": "Frontend",
             "icon": "spark",
             "tone": "primary",
             "skills": [
-              "React.js",
+              "React",
               "Next.js",
-              "Tailwind CSS",
+              "Angular",
               "TypeScript",
-              "Framer Motion",
-              "Storybook"
+              "State Management",
+              "Performance Optimization"
             ]
           },
           {
-            "title": "Backend & DB",
+            "title": "Backend & APIs",
             "icon": "database",
             "tone": "secondary",
             "skills": [
               "Node.js",
               "NestJS",
-              "PostgreSQL",
-              "Redis",
+              "Express.js",
               "GraphQL",
-              "Docker"
+              "REST APIs",
+              "Microservices"
             ]
           },
           {
@@ -146,23 +159,24 @@
             "tone": "tertiary",
             "skills": [
               "React Native",
-              "Expo",
-              "Mobile UX",
-              "Push Notifications",
-              "Biometrics"
+              "Kony Banking Framework",
+              "Temenos Infinity",
+              "Mobile Banking",
+              "iOS/Android Features",
+              "Mobile UI Optimization"
             ]
           },
           {
-            "title": "Tools & Arch",
+            "title": "Tools & Architecture",
             "icon": "architecture",
             "tone": "muted",
             "skills": [
-              "AWS",
+              "Docker",
               "CI/CD",
-              "Microservices",
-              "TDD",
-              "GitOps",
-              "DDD"
+              "GitHub",
+              "Jira",
+              "MCP",
+              "AI Integrations"
             ]
           }
         ]
@@ -227,15 +241,15 @@
         "socialLinks": [
           {
             "label": "Email",
-            "href": "mailto:hello@example.com"
-          },
-          {
-            "label": "GitHub",
-            "href": "#"
+            "href": "mailto:julioortizpol@gmail.com"
           },
           {
             "label": "LinkedIn",
-            "href": "#"
+            "href": "https://linkedin.com/in/jaop"
+          },
+          {
+            "label": "Portfolio",
+            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
           }
         ]
       },
@@ -243,25 +257,25 @@
         "links": [
           {
             "label": "LinkedIn",
-            "href": "#"
+            "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "GitHub",
-            "href": "#"
+            "label": "Portfolio",
+            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
           },
           {
-            "label": "Twitter",
-            "href": "#"
+            "label": "Email",
+            "href": "mailto:julioortizpol@gmail.com"
           }
         ],
-        "copyright": "© 2026 Julio A. Ortiz Pol. Designed & Built with React & Tailwind."
+        "copyright": "© 2026 Julio Antonio Ortiz Pol. Designed & built with React & Tailwind."
       }
     }
   },
   "es": {
     "metadata": {
-      "title": "Julio A. Ortiz Pol | Ingeniero Full-Stack Senior",
-      "description": "Portafolio de Ingeniero Full-Stack Senior enfocado en arquitecturas frontend, mobile y backend."
+      "title": "Julio Antonio Ortiz Pol | Desarrollador Full-Stack",
+      "description": "Portafolio de Desarrollador Full-Stack e Ingeniero de Software enfocado en fintech, banca digital, web, mobile y microservicios."
     },
     "nav": {
       "logo": "JAOP.",
@@ -279,49 +293,49 @@
     "home": {
       "hero": {
         "availability": "Disponible para nuevas oportunidades",
-        "name": "Julio A. Ortiz Pol",
+        "name": "Julio Antonio Ortiz Pol",
         "summary": [
           {
-            "text": "Experiencia en "
+            "text": "Desarrollador Full-Stack e Ingeniero de Software con más de 5 años creando "
           },
           {
-            "text": "Front-End",
+            "text": "plataformas fintech web",
             "tone": "primary"
           },
           {
             "text": ", "
           },
           {
-            "text": "Mobile (React Native)",
+            "text": "apps móviles bancarias",
             "tone": "secondary"
           },
           {
             "text": " y "
           },
           {
-            "text": "Backend (NestJS)",
+            "text": "arquitecturas de microservicios",
             "tone": "tertiary"
           },
           {
-            "text": ". Construyendo ecosistemas digitales de alto rendimiento."
+            "text": " con React, React Native, NestJS y TypeScript."
           }
         ],
         "primaryCta": "Hablemos",
         "secondaryCta": "Ver proyectos",
         "stats": [
           {
-            "value": "+5",
-            "label": "Años como Software Engineer",
+            "value": "+8",
+            "label": "Años en ingeniería de software",
             "tone": "primary"
           },
           {
-            "value": "+5",
-            "label": "Años en Frontend",
+            "value": "+7",
+            "label": "Años en frontend",
             "tone": "secondary"
           },
           {
-            "value": "+3",
-            "label": "Años en Backend",
+            "value": "+5",
+            "label": "Años en backend",
             "tone": "tertiary"
           }
         ]
@@ -330,73 +344,86 @@
         "title": "Experiencia",
         "roles": [
           {
-            "title": "Senior Software Engineer",
+            "title": "Desarrollador Full-Stack",
             "company": "Qik Banco Digital",
-            "period": "Ene 2022 — Presente",
-            "description": "Arquitectando funcionalidades bancarias clave para el primer neo-banco de RD. Liderando iniciativas frontend con foco en rendimiento, accesibilidad y flujos transaccionales de alta seguridad.",
+            "period": "Mayo 2023 - Presente",
+            "description": "Desarrollo y mantengo funcionalidades críticas de back-office, mobile y microservicios para un ecosistema de banca digital, usando NestJS y React Native mientras colaboro en planificación de producto, diseño UI y librerías de componentes reutilizables.",
             "skills": [
-              "React",
-              "Next.js",
-              "Typescript",
-              "Redux"
+              "NestJS",
+              "React Native",
+              "Microservicios",
+              "Banca Digital"
             ],
             "tone": "primary"
           },
           {
-            "title": "Full Stack Developer",
-            "company": "BairesDev",
-            "period": "Mar 2020 — Dic 2021",
-            "description": "Colaboré con clientes Fortune 500 para entregar soluciones SaaS escalables, con foco en microservicios Node.js y manejo complejo de estado en aplicaciones React.",
+            "title": "Desarrollador Full-Stack",
+            "company": "Baires Dev",
+            "period": "Septiembre 2021 - Mayo 2023",
+            "description": "Lideré aplicaciones web React escalables integradas con servicios backend y APIs, aplicando prácticas sólidas de arquitectura full-stack, optimización de rendimiento, componentes reutilizables, integración de APIs, manejo de datos y revisión de código.",
             "skills": [
-              "Node.js",
-              "NestJS",
-              "React Native",
-              "PostgreSQL"
+              "React",
+              "REST APIs",
+              "GraphQL",
+              "State Management"
             ],
             "tone": "secondary"
           },
           {
-            "title": "Software Developer",
-            "company": "NEXUS GROUP",
-            "period": "Jun 2018 — Feb 2020",
-            "description": "Desarrollé sistemas internos de gestión y modernicé portales legacy orientados al cliente usando frameworks modernos de JavaScript.",
+            "title": "Desarrollador Mobile & Front-end y Servicios Java",
+            "company": "TEVOLV (Cliente: Temenos)",
+            "period": "Septiembre 2019 - Octubre 2022",
+            "description": "Construí aplicaciones de banca móvil con React Native y Kony Banking Framework, lideré funcionalidades clave en Temenos Infinity y entregué soluciones seguras para el sector financiero con integraciones complejas de APIs de terceros.",
             "skills": [
-              "JavaScript",
-              "CSS3",
-              "MySQL"
+              "React Native",
+              "Kony Banking Framework",
+              "Temenos Infinity",
+              "Integraciones API"
             ],
             "tone": "tertiary"
+          },
+          {
+            "title": "Pasante de Ingeniería de Software",
+            "company": "Cervecería Nacional Dominicana",
+            "period": "Septiembre 2018 - Septiembre 2019",
+            "description": "Contribuí al desarrollo y mejora de herramientas operativas internas usando React, brindé soporte técnico a usuarios y colaboré en documentación técnica y mantenimiento continuo de software.",
+            "skills": [
+              "React",
+              "Soporte Técnico",
+              "Documentación"
+            ],
+            "tone": "muted"
           }
         ]
       },
       "skills": {
-        "title": "Arsenal Técnico",
-        "description": "Las herramientas que uso para llevar ideas a producción.",
+        "title": "Habilidades Técnicas",
+        "description": "Herramientas y prácticas que uso para entregar productos web, mobile y backend escalables.",
         "categories": [
           {
             "title": "Frontend",
             "icon": "spark",
             "tone": "primary",
             "skills": [
-              "React.js",
+              "React",
               "Next.js",
-              "Tailwind CSS",
+              "Angular",
               "TypeScript",
-              "Framer Motion",
-              "Storybook"
+              "State Management",
+              "Optimización de Rendimiento"
             ]
           },
           {
-            "title": "Backend & DB",
+            "title": "Backend & APIs",
             "icon": "database",
             "tone": "secondary",
             "skills": [
               "Node.js",
               "NestJS",
-              "PostgreSQL",
-              "Redis",
+              "Express.js",
               "GraphQL",
-              "Docker"
+              "REST APIs",
+              "Microservicios"
             ]
           },
           {
@@ -405,23 +432,24 @@
             "tone": "tertiary",
             "skills": [
               "React Native",
-              "Expo",
-              "Mobile UX",
-              "Push Notifications",
-              "Biometrics"
+              "Kony Banking Framework",
+              "Temenos Infinity",
+              "Banca Móvil",
+              "Features iOS/Android",
+              "Optimización UI Mobile"
             ]
           },
           {
-            "title": "Tools & Arch",
+            "title": "Herramientas & Arquitectura",
             "icon": "architecture",
             "tone": "muted",
             "skills": [
-              "AWS",
+              "Docker",
               "CI/CD",
-              "Microservices",
-              "TDD",
-              "GitOps",
-              "DDD"
+              "GitHub",
+              "Jira",
+              "MCP",
+              "Integraciones IA"
             ]
           }
         ]
@@ -486,15 +514,15 @@
         "socialLinks": [
           {
             "label": "Email",
-            "href": "mailto:hello@example.com"
-          },
-          {
-            "label": "GitHub",
-            "href": "#"
+            "href": "mailto:julioortizpol@gmail.com"
           },
           {
             "label": "LinkedIn",
-            "href": "#"
+            "href": "https://linkedin.com/in/jaop"
+          },
+          {
+            "label": "Portafolio",
+            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
           }
         ]
       },
@@ -502,18 +530,18 @@
         "links": [
           {
             "label": "LinkedIn",
-            "href": "#"
+            "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "GitHub",
-            "href": "#"
+            "label": "Portafolio",
+            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
           },
           {
-            "label": "Twitter",
-            "href": "#"
+            "label": "Email",
+            "href": "mailto:julioortizpol@gmail.com"
           }
         ],
-        "copyright": "© 2026 Julio A. Ortiz Pol. Diseñado y construido con React & Tailwind."
+        "copyright": "© 2026 Julio Antonio Ortiz Pol. Diseñado y construido con React & Tailwind."
       }
     }
   }

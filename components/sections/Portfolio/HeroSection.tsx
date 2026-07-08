@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="relative flex min-h-[860px] items-center justify-center overflow-hidden px-gutter py-xl">
+    <section className="relative flex min-h-[560px] items-center justify-center overflow-hidden px-gutter py-md md:min-h-[620px]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(207,188,255,0.14),transparent_34%),linear-gradient(180deg,rgba(20,18,24,0),#0f0d13_92%)]" />
       <div className="relative z-10 mx-auto flex max-w-container-max flex-col items-center text-center">
         <div className="mb-sm inline-flex items-center gap-xs rounded-full border border-outline-variant/30 bg-surface-container-highest/50 px-xs py-1 text-label-sm font-label-sm text-primary">
@@ -20,11 +20,11 @@ export function HeroSection({ content }: HeroSectionProps) {
           {content.availability}
         </div>
 
-        <h1 className="mb-md max-w-5xl text-5xl font-extrabold leading-none text-on-surface md:text-7xl">
+        <h1 className="mb-sm max-w-5xl text-5xl font-extrabold leading-none text-on-surface md:text-7xl">
           {content.name}
         </h1>
 
-        <p className="mx-auto mb-lg max-w-2xl text-body-lg font-body-lg text-on-surface-variant">
+        <p className="mx-auto mb-md max-w-2xl text-body-lg font-body-lg text-on-surface-variant">
           {content.summary.map((segment, index) => (
             <span
               className={segment.tone ? cn(toneText[segment.tone], "font-semibold") : undefined}
@@ -35,18 +35,12 @@ export function HeroSection({ content }: HeroSectionProps) {
           ))}
         </p>
 
-        <div className="mb-xl flex w-full flex-col justify-center gap-md sm:w-auto sm:flex-row">
+        <div className="mb-md flex w-full flex-col justify-center gap-md sm:w-auto sm:flex-row">
           <a
             className="rounded-xl bg-gradient-to-r from-primary to-primary-container px-lg py-sm text-center font-headline-md text-on-primary shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/40"
             href="#contact"
           >
             {content.primaryCta}
-          </a>
-          <a
-            className="rounded-xl border border-outline-variant bg-surface/30 px-lg py-sm text-center font-headline-md text-on-surface backdrop-blur-sm transition-all duration-300 hover:border-primary"
-            href="#projects"
-          >
-            {content.secondaryCta}
           </a>
         </div>
 
