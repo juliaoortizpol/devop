@@ -20,6 +20,10 @@ const icons: Metadata["icons"] = {
   shortcut: "/icon.svg",
 };
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://devjop.vercel.app");
+
 export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
@@ -38,10 +42,34 @@ export async function generateMetadata({
   }
 
   const { metadata } = await getDictionary(lang);
+  const ogImage = `/api/og?lang=${lang}`;
 
   return {
     ...metadata,
+    metadataBase: new URL(siteUrl),
     icons,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      images: [
+        {
+          alt: metadata.title,
+          height: 630,
+          url: ogImage,
+          width: 1200,
+        },
+      ],
+      locale: lang,
+      siteName: "JAOP. Portfolio",
+      type: "website",
+      url: `/${lang}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metadata.title,
+      description: metadata.description,
+      images: [ogImage],
+    },
   };
 }
 
