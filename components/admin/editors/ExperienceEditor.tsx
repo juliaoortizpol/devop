@@ -42,6 +42,17 @@ export function ExperienceEditor({
               value={role.period}
             />
             <Field
+              label="Company Link"
+              onChange={(value) =>
+                onChange((current) =>
+                  updateRole(current, index, {
+                    companyHref: value.trim() || undefined,
+                  })
+                )
+              }
+              value={role.companyHref ?? ""}
+            />
+            <Field
               label="Skills"
               onChange={(value) =>
                 onChange((current) =>

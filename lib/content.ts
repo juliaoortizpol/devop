@@ -52,6 +52,7 @@ export interface LocaleContent {
       roles: Array<{
         title: string;
         company: string;
+        companyHref?: string;
         period: string;
         description: string;
         skills: string[];

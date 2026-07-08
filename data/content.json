@@ -74,6 +74,7 @@
           {
             "title": "Full-Stack Developer",
             "company": "Qik Banco Digital",
+            "companyHref": "https://www.linkedin.com/company/qik-banco/posts/?feedView=all",
             "period": "May 2023 - Present",
             "description": "Develop and maintain critical back-office, mobile, and microservices features for a digital banking ecosystem, using NestJS and React Native while collaborating across product planning, UI design, and reusable component libraries.",
             "skills": [
@@ -87,6 +88,7 @@
           {
             "title": "Full-Stack Developer",
             "company": "Baires Dev",
+            "companyHref": "https://www.linkedin.com/company/bairesdev/posts/?feedView=all",
             "period": "September 2021 - May 2023",
             "description": "Led scalable React web applications integrated with backend services and APIs, applying strong full-stack architecture practices, performance optimization, reusable components, API integration, data handling, and code review standards.",
             "skills": [
@@ -100,6 +102,7 @@
           {
             "title": "Mobile & Front-end Developer and Java Services",
             "company": "TEVOLV (Client: Temenos)",
+            "companyHref": "https://www.linkedin.com/company/tevolvrd/posts/?feedView=all",
             "period": "September 2019 - October 2022",
             "description": "Built mobile banking applications with React Native and Kony Banking Framework, led key Temenos Infinity feature work, and delivered secure financial-sector solutions with complex third-party API integrations.",
             "skills": [
@@ -249,8 +252,8 @@
             "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "Portfolio",
-            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
+            "label": "GitHub",
+            "href": "https://github.com/juliaoortizpol"
           }
         ]
       },
@@ -261,8 +264,8 @@
             "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "Portfolio",
-            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
+            "label": "GitHub",
+            "href": "https://github.com/juliaoortizpol"
           },
           {
             "label": "Email",
@@ -348,6 +351,7 @@
           {
             "title": "Desarrollador Full-Stack",
             "company": "Qik Banco Digital",
+            "companyHref": "https://www.linkedin.com/company/qik-banco/posts/?feedView=all",
             "period": "Mayo 2023 - Presente",
             "description": "Desarrollo y mantengo funcionalidades críticas de back-office, mobile y microservicios para un ecosistema de banca digital, usando NestJS y React Native mientras colaboro en planificación de producto, diseño UI y librerías de componentes reutilizables.",
             "skills": [
@@ -361,6 +365,7 @@
           {
             "title": "Desarrollador Full-Stack",
             "company": "Baires Dev",
+            "companyHref": "https://www.linkedin.com/company/bairesdev/posts/?feedView=all",
             "period": "Septiembre 2021 - Mayo 2023",
             "description": "Lideré aplicaciones web React escalables integradas con servicios backend y APIs, aplicando prácticas sólidas de arquitectura full-stack, optimización de rendimiento, componentes reutilizables, integración de APIs, manejo de datos y revisión de código.",
             "skills": [
@@ -374,6 +379,7 @@
           {
             "title": "Desarrollador Mobile & Front-end y Servicios Java",
             "company": "TEVOLV (Cliente: Temenos)",
+            "companyHref": "https://www.linkedin.com/company/tevolvrd/posts/?feedView=all",
             "period": "Septiembre 2019 - Octubre 2022",
             "description": "Construí aplicaciones de banca móvil con React Native y Kony Banking Framework, lideré funcionalidades clave en Temenos Infinity y entregué soluciones seguras para el sector financiero con integraciones complejas de APIs de terceros.",
             "skills": [
@@ -523,8 +529,8 @@
             "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "Portafolio",
-            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
+            "label": "GitHub",
+            "href": "https://github.com/juliaoortizpol"
           }
         ]
       },
@@ -535,8 +541,8 @@
             "href": "https://linkedin.com/in/jaop"
           },
           {
-            "label": "Portafolio",
-            "href": "https://portfolio-git-main-julioortizpol.vercel.app/"
+            "label": "GitHub",
+            "href": "https://github.com/juliaoortizpol"
           },
           {
             "label": "Email",

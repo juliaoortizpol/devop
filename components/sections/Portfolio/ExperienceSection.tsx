@@ -9,7 +9,7 @@ interface ExperienceSectionProps {
 
 enum ExperienceCompany {
   QikBancoDigital = "Qik Banco Digital",
-  BairesDev = "BairesDev",
+  BairesDev = "Baires Dev",
   NexusGroup = "NEXUS GROUP",
 }
 
@@ -36,7 +36,7 @@ export function ExperienceSection({ content }: ExperienceSectionProps) {
                 >
                   <CompanyIcon company={role.company} />
                 </div>
-                <GlassPanel className="p-md transition-transform duration-300 hover:scale-[1.01]">
+                <ExperienceCard href={role.companyHref}>
                   <div className="mb-xs flex flex-wrap items-start justify-between gap-xs">
                     <h3 className={cn("font-headline-md", toneText[accentTone])}>
                       {role.title}
@@ -45,18 +45,49 @@ export function ExperienceSection({ content }: ExperienceSectionProps) {
                       {role.period}
                     </span>
                   </div>
-                  <p className="mb-sm font-headline-md text-on-surface">{role.company}</p>
+                  <p className="mb-sm font-headline-md text-on-surface">
+                    {role.company}
+                  </p>
                   <p className="mb-md max-w-3xl text-on-surface-variant">
                     {role.description}
                   </p>
                   <TagList tags={role.skills} />
-                </GlassPanel>
+                </ExperienceCard>
               </article>
             );
           })}
         </div>
       </div>
     </section>
+  );
+}
+
+function ExperienceCard({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href?: string;
+}) {
+  const className =
+    "block p-md transition-transform duration-300 hover:scale-[1.01]";
+
+  if (!href) {
+    return <GlassPanel className={className}>{children}</GlassPanel>;
+  }
+
+  return (
+    <a
+      className={cn(
+        className,
+        "rounded-2xl border border-white/10 bg-surface-container/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-xl focus:outline-none focus:ring-2 focus:ring-primary"
+      )}
+      href={href}
+      rel="noreferrer"
+      target="_blank"
+    >
+      {children}
+    </a>
   );
 }
 
