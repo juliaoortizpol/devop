@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const icons: Metadata["icons"] = {
+  icon: "/icon.svg",
+  shortcut: "/icon.svg",
+};
+
 export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
@@ -34,7 +39,10 @@ export async function generateMetadata({
 
   const { metadata } = await getDictionary(lang);
 
-  return metadata;
+  return {
+    ...metadata,
+    icons,
+  };
 }
 
 export default async function RootLayout({
