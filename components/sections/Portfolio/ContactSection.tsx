@@ -10,14 +10,14 @@ export function ContactSection({ content }: ContactSectionProps) {
       <div className="relative z-10 mx-auto max-w-container-max px-gutter text-center">
         <h2 className="mx-auto mb-lg max-w-3xl font-display-lg text-display-lg-mobile text-on-surface md:text-display-lg">
           {content.headlinePrefix}{" "}
-          <span className="bg-gradient-to-r from-primary to-tertiary bg-clip-text text-transparent">
+          <span className="text-primary">
             {content.headlineEmphasis}
           </span>
           ?
         </h2>
         <div className="flex flex-col justify-center gap-md sm:flex-row">
           <a
-            className="rounded-full bg-primary px-xl py-sm font-headline-md text-on-primary shadow-2xl shadow-primary/30 transition-all duration-300 hover:scale-105"
+            className="rounded-full bg-primary px-xl py-sm font-headline-md text-on-primary shadow-lg transition-all duration-300 hover:scale-105"
             href={content.socialLinks[0]?.href ?? "#"}
           >
             {content.primaryCta}

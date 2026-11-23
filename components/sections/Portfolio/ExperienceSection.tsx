@@ -80,7 +80,7 @@ function ExperienceCard({
     <a
       className={cn(
         className,
-        "rounded-2xl border border-white/10 bg-surface-container/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-xl focus:outline-none focus:ring-2 focus:ring-primary"
+        "rounded-2xl border border-surface-container-high bg-surface-container shadow-sm backdrop-blur-xl focus:outline-none focus:ring-2 focus:ring-primary"
       )}
       href={href}
       rel="noreferrer"

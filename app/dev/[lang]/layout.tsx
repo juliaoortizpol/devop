@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/dictionary";
-import "../globals.css";
+import "../../globals.css";
+import "../dev.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 const icons: Metadata["icons"] = {
-  icon: "/icon.svg",
-  shortcut: "/icon.svg",
+  icon: "/dev-icon.svg",
+  shortcut: "/dev-icon.svg",
 };
 
 const siteUrl =
@@ -48,6 +49,7 @@ export async function generateMetadata({
     ...metadata,
     metadataBase: new URL(siteUrl),
     icons,
+    alternates: { canonical: lang === "es" ? "/dev" : "/dev/en", languages: { es: "/dev", en: "/dev/en" } },
     openGraph: {
       title: metadata.title,
       description: metadata.description,
@@ -62,7 +64,7 @@ export async function generateMetadata({
       locale: lang,
       siteName: "JAOP. Portfolio",
       type: "website",
-      url: `/${lang}`,
+      url: lang === "es" ? "/dev" : "/dev/en",
     },
     twitter: {
       card: "summary_large_image",
@@ -89,7 +91,7 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark dev-site`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <Navbar lang={lang as Locale} />

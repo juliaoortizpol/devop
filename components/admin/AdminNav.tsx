@@ -22,7 +22,7 @@ export function AdminNav({ onSave, status }: AdminNavProps) {
         <div className="flex items-center gap-sm">
           <Link
             className="hidden items-center gap-xs rounded-lg border border-outline-variant/30 px-md py-2 text-label-sm font-label-sm text-on-surface-variant transition-all hover:border-primary/50 hover:text-on-surface md:flex"
-            href="/en"
+            href="/dev/en"
           >
             Back to Site
           </Link>

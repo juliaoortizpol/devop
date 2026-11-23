@@ -1,0 +1,956 @@
+/* Exact color roles from Stitch screen b6755f047d3c45cb8513902fdeb5fa1f. */
+:root {
+  --stitch-surface: #121416;
+  --stitch-container: #1e2022;
+  --stitch-low: #1a1c1e;
+  --stitch-lowest: #0c0e10;
+  --stitch-high: #282a2c;
+  --stitch-highest: #333537;
+  --stitch-primary: #f0f1f5;
+  --stitch-on-primary: #2e3134;
+  --stitch-on-surface: #e2e2e5;
+  --stitch-on-surface-variant: #c5c6ca;
+  --stitch-secondary: #c4c6ca;
+  --stitch-outline: #8f9194;
+  --stitch-outline-variant: #44474a;
+  --stitch-accent: #00c4b4;
+  --stitch-accent-hover: #00a89a;
+  color-scheme: dark;
+  scroll-padding-block-start: 7rem;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--stitch-surface);
+}
+body.consultant-site {
+  margin: 0;
+  background: var(--stitch-surface);
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  color: var(--stitch-on-surface);
+}
+.consultant-site a {
+  color: inherit;
+  text-decoration: none;
+}
+.consultant-site a:focus-visible {
+  outline: 3px solid var(--stitch-on-surface-variant);
+  outline-offset: 5px;
+}
+.consultant-site a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.consultant-site p {
+  margin: 0 0 1rem;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-site h1,
+.consultant-site h2,
+.consultant-site h3,
+.consultant-site h4 {
+  margin: 0 0 1rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.consultant-site h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3.5rem);
+  line-height: 1.17;
+}
+.consultant-site h2 {
+  font-size: clamp(1.65rem, 1rem + 1.5vw, 2.5rem);
+  text-wrap: balance;
+}
+.consultant-site h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.consultant-site h4 {
+  font-size: 1rem;
+  margin-block: 1.25rem 0.4rem;
+}
+.consultant-site ul,
+.consultant-site ol {
+  margin: 0;
+}
+.consultant-site svg {
+  flex-shrink: 0;
+}
+.consultant-container {
+  inline-size: min(100% - 4rem, 75rem);
+  margin-inline: auto;
+}
+.consultant-section {
+  padding-block: 6rem;
+  scroll-margin-block-start: 1rem;
+}
+.consultant-band {
+  background: var(--stitch-low);
+}
+.consultant-site .consultant-eyebrow {
+  color: var(--stitch-outline);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.consultant-site .consultant-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+.consultant-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 20;
+  background: rgb(18 20 22 / 95%);
+  border-block-end: 1px solid var(--stitch-high);
+  /* Avoid a containing block that traps the fixed mobile navigation. */
+}
+.consultant-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-block-size: 5rem;
+  padding-block: 0.75rem;
+}
+.consultant-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.consultant-brand strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.consultant-brand small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-mark {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: var(--stitch-high);
+  color: var(--stitch-primary);
+}
+.consultant-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.consultant-nav a {
+  font-size: 0.875rem;
+  white-space: nowrap;
+  min-block-size: 2.75rem;
+  display: flex;
+  align-items: center;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-nav-icon {
+  display: none;
+}
+.consultant-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.consultant-languages {
+  display: flex;
+  gap: 0.25rem;
+}
+.consultant-languages a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  padding-inline: 0.25rem;
+  font-size: 0.8125rem;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-languages a[aria-current] {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  color: var(--stitch-accent);
+}
+.consultant-site .consultant-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-block-size: 3rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+  transition: background-color 0.15s;
+  background: var(--stitch-accent);
+  color: var(--stitch-surface);
+}
+.consultant-site .consultant-button:hover {
+  text-decoration: none;
+  background: var(--stitch-accent-hover);
+}
+.consultant-site .consultant-button-secondary {
+  background: var(--stitch-container);
+  color: var(--stitch-primary);
+  border-color: var(--stitch-high);
+}
+.consultant-site .consultant-button-secondary:hover {
+  background: var(--stitch-high);
+  color: var(--stitch-primary);
+}
+.consultant-site .consultant-header-cta {
+  min-block-size: 2.75rem;
+  padding: 0.6rem 1.25rem;
+}
+.consultant-profile-link {
+  display: grid;
+  place-items: center;
+  min-inline-size: 2.75rem;
+  min-block-size: 2.75rem;
+  border-radius: 0.65rem;
+  background: var(--stitch-primary);
+}
+.consultant-profile-link svg {
+  color: var(--stitch-on-primary);
+}
+.consultant-skip {
+  position: fixed;
+  inset-block-start: -8rem;
+  inset-inline-start: 1rem;
+  z-index: 50;
+  padding: 0.75rem 1.5rem;
+  background: var(--stitch-container);
+}
+.consultant-skip:focus {
+  inset-block-start: 1rem;
+}
+.consultant-hero {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  padding-block: 6rem;
+}
+.consultant-site .consultant-badge {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  background: var(--stitch-container);
+  margin-block-end: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 1.5rem;
+  align-items: center;
+}
+.consultant-site .consultant-evidence {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--stitch-on-surface-variant);
+  margin-block: 2rem 0;
+}
+.consultant-diagram {
+  background: var(--stitch-container);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.consultant-diagram-heading,
+.consultant-diagram-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--stitch-outline);
+  font-size: 0.75rem;
+}
+.consultant-diagram-heading .consultant-eyebrow {
+  font-size: 0.75rem;
+}
+.consultant-diagram ol {
+  list-style: none;
+  padding: 1.5rem 0;
+  display: grid;
+  gap: 1.5rem;
+}
+.consultant-diagram li {
+  padding: 1rem;
+  position: relative;
+  background: var(--stitch-low);
+  border-inline-start: 2px solid var(--stitch-accent);
+}
+.consultant-diagram li:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  inset-block-end: -1.5rem;
+  inset-inline-start: 50%;
+  color: var(--stitch-accent);
+}
+.consultant-diagram li > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin-block-end: 0.35rem;
+}
+.consultant-diagram li strong {
+  font-weight: 500;
+  color: var(--stitch-primary);
+}
+.consultant-step-context {
+  color: var(--stitch-outline);
+}
+.consultant-diagram li p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+.consultant-section-intro {
+  max-inline-size: 49rem;
+  margin-block-end: 2.5rem;
+}
+.consultant-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.consultant-service {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--stitch-container);
+  border: 1px solid rgb(40 42 44 / 60%);
+}
+.consultant-service-intro {
+  padding: 1.5rem;
+  flex: 1;
+}
+.consultant-service-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  margin-block-end: 1.25rem;
+}
+.consultant-number {
+  display: inline-flex;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.125rem;
+  font-size: 1.25rem;
+  background: var(--stitch-highest);
+  color: var(--stitch-primary);
+}
+.consultant-service-phase {
+  font-size: 0.75rem;
+  color: var(--stitch-outline);
+}
+.consultant-service-intro p {
+  font-size: 0.9375rem;
+}
+.consultant-service-details {
+  padding: 1.5rem;
+  border-block-start: 0;
+  background: rgb(12 14 16 / 40%);
+}
+.consultant-service-details .consultant-eyebrow {
+  font-size: 0.75rem;
+}
+.consultant-service-details ul {
+  padding-inline-start: 1.1rem;
+  margin-block-end: 1.5rem;
+  color: var(--stitch-on-surface-variant);
+  font-size: 0.9375rem;
+}
+.consultant-service-details li + li {
+  margin-block-start: 0.4rem;
+}
+.consultant-service-details .consultant-button {
+  inline-size: 100%;
+}
+.consultant-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  margin-block-start: 2.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  border: 0;
+  background: var(--stitch-high);
+}
+.consultant-note p {
+  margin: 0;
+}
+.consultant-note a {
+  flex-shrink: 0;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+.consultant-split-heading {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: end;
+  margin-block-end: 2.5rem;
+}
+.consultant-process {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+.consultant-process li {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--stitch-container);
+}
+.consultant-process li > span {
+  display: block;
+  margin-block-end: 3rem;
+}
+.consultant-process p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+.consultant-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.consultant-project {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--stitch-container);
+}
+.consultant-project-art {
+  block-size: 12rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: var(--stitch-highest);
+  border-block-end: 0;
+  color: var(--stitch-outline);
+}
+.consultant-project-art > span {
+  padding: 0.1rem 0.35rem;
+  background: var(--stitch-surface);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--stitch-secondary);
+}
+.consultant-bars {
+  display: flex;
+  align-items: end;
+  gap: 0.75rem;
+  inline-size: 100%;
+  block-size: 4rem;
+}
+.consultant-bars i {
+  flex: 1;
+  border-radius: 0.125rem 0.125rem 0 0;
+  background: var(--stitch-high);
+}
+.consultant-bars i:nth-child(3n) {
+  background: var(--stitch-accent);
+}
+.consultant-wireframe {
+  margin: auto;
+  inline-size: 10rem;
+  block-size: 5rem;
+  padding: 0.6rem;
+  border: 2px solid var(--stitch-outline);
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 2fr;
+  background: var(--stitch-low);
+  border-color: var(--stitch-outline-variant);
+}
+.consultant-wireframe div {
+  background: var(--stitch-highest);
+}
+.consultant-project-copy {
+  padding: 1.5rem;
+}
+.consultant-project-copy > p {
+  font-size: 0.9375rem;
+}
+.consultant-project-copy .consultant-eyebrow {
+  font-size: 0.75rem;
+}
+.consultant-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 1rem 0 0;
+}
+.consultant-tags li {
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.125rem;
+  font-size: 0.75rem;
+  background: var(--stitch-low);
+  color: var(--stitch-outline);
+}
+.consultant-about {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+.consultant-signature-card {
+  aspect-ratio: 4 / 5;
+  background: var(--stitch-container);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consultant-signature-card > p:last-child {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.consultant-signature {
+  font-size: clamp(4rem, 2rem + 5vw, 7rem);
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.075em;
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-signature span {
+  display: block;
+  inline-size: 50%;
+  block-size: 0.3rem;
+  background: var(--stitch-on-surface-variant);
+  margin: 1.5rem auto 0;
+}
+.consultant-credentials {
+  margin-block: 1.5rem;
+  padding: 1.5rem;
+  background: var(--stitch-container);
+  border-radius: 0.5rem;
+}
+.consultant-credentials > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.consultant-credentials strong {
+  font-weight: 500;
+}
+.consultant-credentials div p {
+  font-size: 0.875rem;
+  margin-block: 0.4rem 0;
+}
+.consultant-text-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-block-start: 1rem;
+  font-size: 0.875rem;
+}
+.consultant-text-links a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+.consultant-contact {
+  padding: 4rem;
+  border-radius: 0.75rem;
+  background: var(--stitch-container);
+}
+.consultant-contact h2 {
+  font-size: clamp(1.75rem, 1rem + 2.5vw, 3.5rem);
+  max-inline-size: 19ch;
+}
+.consultant-contact .consultant-lead {
+  max-inline-size: 48rem;
+}
+.consultant-email {
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+  padding: 0.5rem;
+}
+.consultant-footer {
+  padding-block: 2.5rem;
+  background: var(--stitch-lowest);
+  border-block-start: 1px solid var(--stitch-high);
+}
+.consultant-footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block-end: 1.5rem;
+  border-block-end: 1px solid var(--stitch-container);
+}
+.consultant-footer-top p {
+  font-size: 0.875rem;
+}
+.consultant-footer-top .consultant-mark {
+  margin-inline-end: 0.5rem;
+  font-size: 0.875rem;
+  background: var(--stitch-low);
+  color: var(--stitch-secondary);
+  border: 1px solid var(--stitch-high);
+}
+.consultant-site .consultant-copyright {
+  margin-block: 1.5rem 0;
+  font-size: 0.8125rem;
+  color: var(--stitch-outline);
+}
+@media (max-width: 75rem) {
+  .consultant-brand small {
+    display: none;
+  }
+  .consultant-header-row,
+  .consultant-header-actions {
+    gap: 0.75rem;
+  }
+  .consultant-nav {
+    gap: 1rem;
+  }
+  .consultant-hero {
+    gap: 3rem;
+  }
+}
+@media (max-width: 60rem) {
+  :root {
+    scroll-padding-block-start: 6rem;
+  }
+  .consultant-site {
+    padding-block-end: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
+  .consultant-container {
+    inline-size: min(100% - 2.5rem, 75rem);
+  }
+  .consultant-nav {
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline: 0;
+    justify-content: space-around;
+    gap: 0.25rem;
+    padding: 0.65rem 0.5rem calc(0.65rem + env(safe-area-inset-bottom, 0px));
+    border-block-start: 1px solid var(--stitch-container);
+    background: var(--stitch-surface);
+  }
+  .consultant-nav a {
+    flex-direction: column;
+    gap: 0.15rem;
+    font-size: 0.75rem;
+    padding-inline: 0.25rem;
+  }
+  .consultant-nav-icon {
+    display: block;
+    block-size: 1.5rem;
+  }
+  .consultant-header-row {
+    min-block-size: 4rem;
+  }
+  .consultant-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-block: 2rem 3rem;
+  }
+  .consultant-diagram ol {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.3rem;
+    padding-block: 1rem;
+  }
+  .consultant-diagram li {
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+  }
+  .consultant-diagram li > div {
+    display: block;
+    margin: 0;
+  }
+  .consultant-step-number {
+    display: block;
+  }
+  .consultant-diagram li p,
+  .consultant-step-context,
+  .consultant-diagram li::after {
+    display: none;
+  }
+  .consultant-section {
+    padding-block: 3rem;
+  }
+  .consultant-services {
+    grid-template-columns: 1fr;
+  }
+  .consultant-service {
+    background: var(--stitch-container);
+    border: 1px solid var(--stitch-outline);
+  }
+  .consultant-service-intro {
+    padding-block-end: 0;
+  }
+  .consultant-service-details {
+    border: 0;
+  }
+  .consultant-service-details .consultant-button {
+    border-color: var(--stitch-outline);
+  }
+  .consultant-process {
+    grid-template-columns: 1fr 1fr;
+  }
+  .consultant-split-heading {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .consultant-about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .consultant-signature-card {
+    aspect-ratio: auto;
+    min-block-size: 15rem;
+  }
+  .consultant-signature {
+    font-size: 4rem;
+  }
+  .consultant-footer-top {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 40rem) {
+  .consultant-site h1 {
+    font-size: 2rem;
+  }
+  .consultant-site .consultant-lead {
+    font-size: 1rem;
+  }
+  .consultant-header-actions {
+    gap: 0.4rem;
+  }
+  .consultant-brand {
+    gap: 0.3rem;
+  }
+  .consultant-brand strong {
+    font-size: 0.8125rem;
+  }
+  .consultant-mark {
+    font-size: 0.875rem;
+  }
+  .consultant-languages a {
+    padding-inline: 0.15rem;
+    font-size: 0.75rem;
+  }
+  .consultant-site .consultant-header-cta {
+    padding-inline: 0.65rem;
+    font-size: 0.8125rem;
+  }
+  .consultant-profile-link {
+    min-inline-size: 2.5rem;
+  }
+  .consultant-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .consultant-actions .consultant-button {
+    inline-size: 100%;
+  }
+  .consultant-diagram {
+    padding: 1rem;
+  }
+  .consultant-diagram-heading {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .consultant-diagram li > div {
+    font-size: 0.6875rem;
+    overflow-wrap: anywhere;
+  }
+  .consultant-process {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .consultant-process li {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+  }
+  .consultant-process li > span {
+    margin: 0;
+  }
+  .consultant-projects,
+  .consultant-credentials > div {
+    grid-template-columns: 1fr;
+  }
+  .consultant-note {
+    flex-direction: column;
+    align-items: start;
+  }
+  .consultant-contact {
+    padding: 1.5rem;
+  }
+  .consultant-email {
+    text-align: center;
+  }
+}
+@media (max-width: 23rem) {
+  .consultant-header-cta {
+    display: none !important;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+@media (forced-colors: active) {
+  .consultant-site .consultant-button,
+  .consultant-profile-link,
+  .consultant-service,
+  .consultant-process li,
+  .consultant-diagram {
+    border: 1px solid ButtonText;
+  }
+  .consultant-site a:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+.consultant-site h1,
+.consultant-site h2,
+.consultant-site h4,
+.consultant-process h3,
+.consultant-project h3,
+.consultant-brand strong,
+.consultant-credentials strong {
+  color: var(--stitch-primary);
+}
+.consultant-section-intro > .consultant-eyebrow,
+.consultant-split-heading > div > .consultant-eyebrow,
+.consultant-about > div > .consultant-eyebrow,
+.consultant-contact > .consultant-eyebrow {
+  color: var(--stitch-secondary);
+}
+.consultant-signature-card > .consultant-eyebrow {
+  color: var(--stitch-outline) !important;
+}
+.consultant-diagram-heading > span:last-child {
+  color: var(--stitch-on-surface-variant);
+}
+.consultant-service-details .consultant-eyebrow {
+  color: var(--stitch-primary);
+}
+.consultant-service-details li::marker {
+  color: var(--stitch-accent);
+}
+.consultant-process li > .consultant-eyebrow {
+  color: var(--stitch-accent);
+}
+.consultant-site .consultant-evidence > span,
+.consultant-note p > span, .consultant-note a,
+.consultant-about a[href="https://linkedin.com/in/jaop"],
+.consultant-site .consultant-email {
+  color: var(--stitch-accent);
+}
+.consultant-site .consultant-email {
+  background: var(--stitch-high);
+}
+.consultant-note a:hover, .consultant-site .consultant-email:hover,
+.consultant-about a[href="https://linkedin.com/in/jaop"]:hover
+{
+  color: var(--stitch-accent-hover);
+}
+.consultant-nav a:hover,
+.consultant-footer a:hover {
+  color: var(--stitch-accent);
+}
+.consultant-brand:hover .consultant-mark,
+.consultant-service:hover .consultant-number {
+  background: var(--stitch-accent);
+  color: var(--stitch-surface);
+}
+.consultant-service:hover,
+.consultant-diagram li:hover {
+  background: var(--stitch-high);
+}
+.consultant-service:hover h3 {
+  color: var(--stitch-primary);
+}
+.consultant-badge::before {
+  content: "";
+  display: inline-block;
+  inline-size: 0.375rem;
+  block-size: 0.375rem;
+  border-radius: 50%;
+  background: var(--stitch-accent);
+  margin-inline-end: 0.4rem;
+  vertical-align: middle;
+}
+.consultant-site ::selection {
+  background: var(--stitch-accent);
+  color: var(--stitch-surface);
+}
+.consultant-site a:focus-visible {
+  outline-color: var(--stitch-accent);
+}
+.consultant-about .consultant-lead {
+  color: var(--stitch-primary);
+}
+.consultant-note:has(> p:only-child) {
+  background: rgb(40 42 44 / 60%);
+}
+@media (max-width: 60rem) {
+  .consultant-service {
+    background: var(--stitch-container);
+    border: 1px solid rgb(40 42 44 / 60%);
+  }
+  .consultant-service-details {
+    background: rgb(12 14 16 / 40%);
+  }
+  .consultant-service-details .consultant-button {
+    border-color: var(--stitch-high);
+  }
+  .consultant-nav {
+    border-color: var(--stitch-high);
+  }
+}
+@media (forced-colors: active) {
+  .consultant-site a:focus-visible {
+    outline-color: Highlight;
+  }
+  .consultant-service,
+  .consultant-site .consultant-button {
+    border: 1px solid ButtonText;
+  }
+}

@@ -20,7 +20,7 @@ export function HomeLogoLink({ href, label }: HomeLogoLinkProps) {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
       }}
-      className="font-display-lg text-display-lg-mobile bg-gradient-to-r from-primary to-tertiary bg-clip-text text-transparent transition-transform duration-200 hover:scale-105"
+      className="font-display-lg text-display-lg-mobile text-primary transition-transform duration-200 hover:scale-105"
     >
       {label}
     </Link>

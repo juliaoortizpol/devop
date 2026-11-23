@@ -1,0 +1,20 @@
+{
+  "screen": "b6755f047d3c45cb8513902fdeb5fa1f",
+  "tokens": {
+    "surface": "#121416",
+    "container": "#1e2022",
+    "low": "#1a1c1e",
+    "lowest": "#0c0e10",
+    "high": "#282a2c",
+    "highest": "#333537",
+    "primary": "#f0f1f5",
+    "on-primary": "#2e3134",
+    "on-surface": "#e2e2e5",
+    "on-surface-variant": "#c5c6ca",
+    "secondary": "#c4c6ca",
+    "outline": "#8f9194",
+    "outline-variant": "#44474a",
+    "accent": "#00C4B4",
+    "accent-hover": "#00a89a"
+  }
+}
