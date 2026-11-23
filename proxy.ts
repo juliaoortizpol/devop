@@ -1,39 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { defaultLocale, isLocale, locales } from "@/lib/dictionary";
 
 const adminRealm = "JAOP Portfolio Admin";
-
-function getPreferredLocale(request: NextRequest) {
-  const acceptLanguage = request.headers.get("accept-language");
-
-  if (!acceptLanguage) {
-    return defaultLocale;
-  }
-
-  const preferredLocales = acceptLanguage
-    .split(",")
-    .map((value) => {
-      const [language, ...directives] = value.split(";");
-      const quality = directives
-        .map((directive) => directive.trim())
-        .find((directive) => directive.startsWith("q="))
-        ?.replace("q=", "");
-
-      return {
-        language: language?.trim().toLowerCase() ?? "",
-        quality: quality ? Number(quality) : 1,
-      };
-    })
-    .filter(({ language, quality }) => language && quality > 0)
-    .sort((a, b) => b.quality - a.quality);
-
-  return (
-    preferredLocales
-      .map(({ language }) => language.split("-")[0])
-      .find((locale) => isLocale(locale)) ??
-    defaultLocale
-  );
-}
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -51,18 +18,27 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
-  );
-
-  if (pathnameHasLocale) {
-    return NextResponse.next();
+  // Public entry points use Spanish; explicit /en URLs retain English.
+  if (pathname === "/") {
+    request.nextUrl.pathname = "/consultor";
+    return NextResponse.redirect(request.nextUrl, 308);
   }
 
-  const locale = getPreferredLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-
-  return NextResponse.redirect(request.nextUrl);
+  // Preserve old links, query strings and browser-carried fragments.
+  const legacy = pathname.match(/^\/(en|es)(\/.*)?$/);
+  if (legacy) {
+    request.nextUrl.pathname = `/dev${legacy[1] === "en" ? "/en" : ""}${legacy[2] ?? ""}`;
+    return NextResponse.redirect(request.nextUrl, 308);
+  }
+  if (pathname === "/dev/es" || pathname === "/consultor/es") {
+    request.nextUrl.pathname = pathname.replace(/\/es$/, "");
+    return NextResponse.redirect(request.nextUrl, 308);
+  }
+  if (pathname === "/dev" || pathname === "/consultor") {
+    request.nextUrl.pathname = `${pathname}/es`;
+    return NextResponse.rewrite(request.nextUrl);
+  }
+  return NextResponse.next();
 }
 
 function isAdminAuthorized(request: NextRequest) {

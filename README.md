@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Consultoría y portafolio
+
+La entrada principal redirige a /consultor. El portafolio anterior vive en /dev; ambas secciones tienen versión inglesa en /en dentro de su ruta. Las URLs antiguas /en y /es redirigen al portafolio de desarrollador.
+
+Diseño, referencias de Stitch, decisiones de contenido y comprobaciones: [docs/design/consultant-rebrand.md](docs/design/consultant-rebrand.md).
+
+Con el servidor local en el puerto 3210, ejecute: node scripts/check-routes.mjs.

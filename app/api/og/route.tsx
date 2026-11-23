@@ -27,8 +27,8 @@ export function GET(request: Request) {
       <div
         style={{
           alignItems: "center",
-          background: "linear-gradient(135deg, #0f0d13 0%, #211a2c 55%, #112635 100%)",
-          color: "#f5f1ff",
+          background: "#121416",
+          color: "#f0f1f5",
           display: "flex",
           height: "100%",
           justifyContent: "center",
@@ -52,9 +52,9 @@ export function GET(request: Request) {
             <div
               style={{
                 alignItems: "center",
-                background: "linear-gradient(135deg, #cfbcff, #8fd9ff)",
+                background: "#00C4B4",
                 borderRadius: 24,
-                color: "#0f0d13",
+                color: "#121416",
                 display: "flex",
                 fontSize: 40,
                 fontWeight: 800,
@@ -66,10 +66,10 @@ export function GET(request: Request) {
               &lt;/&gt;
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ color: "#cfbcff", fontSize: 30, fontWeight: 700 }}>
+              <div style={{ color: "#00C4B4", fontSize: 30, fontWeight: 700 }}>
                 JAOP.
               </div>
-              <div style={{ color: "#bdb5ca", fontSize: 24 }}>
+              <div style={{ color: "#8f9194", fontSize: 24 }}>
                 Portfolio
               </div>
             </div>
@@ -79,10 +79,10 @@ export function GET(request: Request) {
             <div style={{ fontSize: 76, fontWeight: 900, lineHeight: 1 }}>
               Julio Antonio Ortiz Pol
             </div>
-            <div style={{ color: "#8fd9ff", fontSize: 38, fontWeight: 700 }}>
+            <div style={{ color: "#00C4B4", fontSize: 38, fontWeight: 700 }}>
               {copy.role}
             </div>
-            <div style={{ color: "#d7d0df", fontSize: 30, lineHeight: 1.25, maxWidth: 900 }}>
+            <div style={{ color: "#c5c6ca", fontSize: 30, lineHeight: 1.25, maxWidth: 900 }}>
               {copy.summary}
             </div>
           </div>

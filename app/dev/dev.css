@@ -1,0 +1,49 @@
+/* Colors copied from the same Stitch source as /consultor. Scoped to /dev. */
+.dev-site {
+  --color-background: #121416;
+  --color-on-background: #e2e2e5;
+  --color-surface: #121416;
+  --color-surface-dim: #121416;
+  --color-surface-container-lowest: #0c0e10;
+  --color-surface-container-low: #1a1c1e;
+  --color-surface-container: #1e2022;
+  --color-surface-container-high: #282a2c;
+  --color-surface-container-highest: #333537;
+  --color-on-surface: #e2e2e5;
+  --color-on-surface-variant: #c5c6ca;
+  --color-primary: #00C4B4;
+  --color-on-primary: #121416;
+  --color-primary-container: #00a89a;
+  --color-on-primary-container: #121416;
+  --color-secondary: #c4c6ca;
+  --color-on-secondary: #121416;
+  --color-secondary-container: #282a2c;
+  --color-on-secondary-container: #c5c6ca;
+  --color-tertiary: #00C4B4;
+  --color-on-tertiary: #121416;
+  --color-tertiary-container: #00a89a;
+  --color-on-tertiary-container: #121416;
+  --color-outline: #8f9194;
+  --color-outline-variant: #44474a;
+  --color-surface-bright: #38393c;
+  color-scheme: dark;
+}
+.dev-site h1, .dev-site h2, .dev-site h3 { color: #f0f1f5; }
+.dev-site a:focus-visible { outline: 3px solid #00C4B4; outline-offset: 4px; }
+.dev-site ::selection { background: #00C4B4; color: #121416; }
+.dev-site .bg-primary:hover { background-color: #00a89a; }
+@media (forced-colors: active) {
+  .dev-site a:focus-visible { outline-color: Highlight; }
+  .dev-site .bg-primary { border: 1px solid ButtonText; }
+}
+
+/* Reserve all navigation rows and keep anchor targets below the header. */
+@media (width < 64rem) {
+  .dev-site { scroll-padding-top: 7.5rem; }
+  .dev-site main { margin-top: 7rem; }
+}
+
+@media (width < 40rem) {
+  .dev-site { scroll-padding-top: 10.5rem; }
+  .dev-site main { margin-top: 10rem; }
+}

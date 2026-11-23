@@ -24,7 +24,7 @@ export function ScrollNavWrapper({ children }: ScrollNavWrapperProps) {
   return (
     <nav
       className={cn(
-        "fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-[0_0_40px_-10px_rgba(129,140,248,0.15)] transition-all duration-300",
+        "fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-b border-surface-container-high shadow-sm transition-all duration-300",
         scrolled ? "py-2 h-14" : "h-16"
       )}
     >

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121416;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#e0d3ca", "outline-variant": "#44474a", "error": "#ffb4ab", "surface-bright": "#38393c", "surface-variant": "#333537", "secondary-fixed-dim": "#c4c7cb", "secondary-container": "#464a4d", "on-tertiary-fixed": "#211a15", "on-secondary-container": "#b5b9bc", "on-tertiary": "#362f29", "surface-container": "#1e2022", "primary-fixed-dim": "#c4c6ca", "background": "#121416", "on-secondary": "#2d3134", "secondary-fixed": "#e0e3e7", "on-primary-container": "#595c60", "on-surface-variant": "#c5c6ca", "surface-dim": "#121416", "surface": "#121416", "on-error": "#690005", "on-primary-fixed-variant": "#44474a", "primary-container": "#d3d5d9", "tertiary": "#fdefe6", "surface-container-high": "#282a2c", "inverse-on-surface": "#2f3133", "on-tertiary-fixed-variant": "#4e453f", "on-primary": "#2e3134", "on-secondary-fixed-variant": "#43474a", "surface-container-low": "#1a1c1e", "on-primary-fixed": "#191c1f", "error-container": "#93000a", "on-surface": "#e2e2e5", "tertiary-fixed": "#ede0d7", "surface-tint": "#c4c6ca", "primary": "#f0f1f5", "outline": "#8f9194", "surface-container-lowest": "#0c0e10", "surface-container-highest": "#333537", "on-secondary-fixed": "#181c1f", "on-background": "#e2e2e5", "secondary": "#c4c7cb", "on-error-container": "#ffdad6", "on-tertiary-container": "#645a53", "inverse-surface": "#e2e2e5", "primary-fixed": "#e1e2e6", "tertiary-fixed-dim": "#d1c4bb", "inverse-primary": "#5c5f62" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "2rem", "space-xs": "0.25rem", "margin-desktop": "4rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "headline-md-mobile": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "display": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "display-mobile": ["Inter"] }, "fontSize": { "headline-sm": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md-mobile": ["1.375rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["0.6875rem", { "lineHeight": "1.3", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500" }], "display": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-md": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><a class="flex items-center gap-space-sm" data-path="inicio" href="#"><span class="flex items-center justify-center w-8 h-8 rounded bg-surface-container text-on-surface font-label-md text-label-md font-semibold tracking-wider">JOP</span><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface font-medium leading-none">Julio Ortiz Pol</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Arquitectura &amp; Software</span></div></a><div class="flex items-center gap-space-sm"><div class="flex items-center px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="text-primary font-semibold">ES</span><span class="mx-1 text-outline-variant">|</span><span class="hover:text-primary transition-colors">EN</span></div><a class="h-11 px-space-md rounded bg-primary text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center justify-center transition-colors" data-path="contacto" href="#">Hablemos</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 px-margin-mobile bg-surface"><div class="flex flex-col w-full gap-space-xl">
+<!-- 1. PORTADA HERO SECTION -->
+<section class="flex flex-col pt-space-md">
+<!-- Etiqueta técnica de contexto -->
+<div class="inline-flex items-center gap-space-xs self-start px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant mb-space-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>Consultoría y desarrollo de software</span>
+</div>
+<!-- Título Principal -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight mb-space-sm">
+      Su idea merece un camino claro para convertirse en una aplicación.
+    </h1>
+<!-- Descripción para Emprendedores y Pymes -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+      Le ayudo a mitigar la incertidumbre técnica y construir software confiable. Acompaño a fundadores y directivos desde la validación conceptual hasta la entrega de sistemas escalables.
+    </p>
+<!-- CTAs Verticales Móviles -->
+<div class="flex flex-col gap-space-sm mb-space-xl">
+<a class="w-full h-12 rounded bg-primary-container text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center justify-center gap-space-xs transition-colors active:bg-primary shadow-sm" href="mailto:julioortizpol@gmail.com?subject=Consulta%20sobre%20proyecto">
+<span>Hablemos de su proyecto</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full h-12 rounded bg-surface-container text-on-surface font-label-lg text-label-lg font-medium inline-flex items-center justify-center transition-colors active:bg-surface-container-high" href="#servicios-seccion">
+<span>Explorar servicios</span>
+</a>
+</div>
+<!-- Diagrama de Proceso Compacto y Táctil -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Metodología modular</span>
+<span class="font-label-sm text-label-sm text-primary-container font-medium">Ciclo de vida</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs relative">
+<div class="flex flex-col items-center text-center p-2 rounded bg-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold">01</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Idea</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded bg-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold">02</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Definición</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded bg-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold">03</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Desarrollo</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded bg-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold">04</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-1">Evolución</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Sin sobrecostes técnicos
+        </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Hitos medibles
+        </span>
+</div>
+</div>
+</section>
+<!-- 2. SERVICIOS -->
+<section class="flex flex-col gap-space-md" id="servicios-seccion">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Enfoque estratégico</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+        ¿En qué punto está su proyecto?
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Seleccione el estado en el que se encuentra su iniciativa para estructurar el plan de trabajo adecuado.
+      </p>
+</div>
+<!-- Opción 1: Aterrizar Idea -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">lightbulb</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded">Fase inicial</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Quiero aterrizar una idea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Diseño con usted la base tecnológica sin asumir riesgos innecesarios. Validamos viabilidad antes de escribir código.
+        </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Diagnóstico técnico de factibilidad</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Delimitación del alcance inicial (MVP)</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Hoja de ruta y estimación certera de costes</span>
+</div>
+</div>
+<a class="mt-space-xs h-11 w-full rounded bg-surface-container-high text-primary font-label-lg text-label-lg inline-flex items-center justify-center gap-1 active:bg-surface-container-highest transition-colors" href="mailto:julioortizpol@gmail.com?subject=Aterrizar%20una%20idea">
+<span>Definir alcance inicial</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Opción 2: Construir Solución -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">code_blocks</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded">Ejecución</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Necesito construir una solución</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Desarrollo integral de plataformas web y aplicaciones móviles con código riguroso, pruebas automatizadas y despliegue continuo.
+        </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Desarrollo web y móvil entregado por etapas</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Integraciones de pasarelas, APIs y ERPs</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Arquitectura basada en nube y alta disponibilidad</span>
+</div>
+</div>
+<a class="mt-space-xs h-11 w-full rounded bg-surface-container-high text-primary font-label-lg text-label-lg inline-flex items-center justify-center gap-1 active:bg-surface-container-highest transition-colors" href="mailto:julioortizpol@gmail.com?subject=Construir%20solucion">
+<span>Cotizar desarrollo</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Opción 3: Mejorar lo Existente -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">published_with_changes</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-0.5 rounded">Optimización</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Quiero mejorar lo que ya tengo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Auditoría de sistemas lentos o heredados. Resuelvo cuellos de botella de rendimiento, seguridad y deuda técnica acumulada.
+        </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Revisión técnica y auditoría de código</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Refactorización y reducción de latencia</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">check</span>
+<span>Plan de evolución sostenible a largo plazo</span>
+</div>
+</div>
+<a class="mt-space-xs h-11 w-full rounded bg-surface-container-high text-primary font-label-lg text-label-lg inline-flex items-center justify-center gap-1 active:bg-surface-container-highest transition-colors" href="mailto:julioortizpol@gmail.com?subject=Mejorar%20sistema%20existente">
+<span>Solicitar auditoría técnica</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- 3. CÓMO TRABAJO -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Metodología directa</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+        Cómo trabajo
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Cuatro etapas secuenciales sin jerga vacía ni intermediarios innecesarios.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Paso 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold shrink-0">
+          01
+        </div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-primary font-medium mb-1">Entender</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Analizamos en detalle sus objetivos de negocio, clientes y restricciones operativas antes de prescribir software.
+          </p>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold shrink-0">
+          02
+        </div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-primary font-medium mb-1">Definir</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Establezco la arquitectura de datos, especificaciones de interfaces y entregables con presupuestos transparentes y fijos.
+          </p>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold shrink-0">
+          03
+        </div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-primary font-medium mb-1">Construir</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Desarrollo ágil mediante iteraciones semanales que usted puede verificar, probar y validar directamente en entornos seguros.
+          </p>
+</div>
+</div>
+<!-- Paso 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="flex items-center justify-center w-8 h-8 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold shrink-0">
+          04
+        </div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-primary font-medium mb-1">Evolucionar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Lanzamiento en producción, monitorización activa y optimización continua de acuerdo con la adopción real de los usuarios.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PROYECTOS SELECCIONADOS -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Casos reales</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+        Proyectos seleccionados
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Resultados tangibles donde la arquitectura sólida impulsó la tracción de negocio.
+      </p>
+</div>
+<!-- Proyecto 1 -->
+<div class="rounded-xl bg-surface-container overflow-hidden flex flex-col">
+<div class="w-full h-44 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A clean modern minimalist user interface for a fintech operational dashboard displayed on a high-end device, dark theme charcoal and graphite aesthetic with subtle silver data lines and high contrast metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsWdVYX0WkVx06VOrS1o_G64hd1pzi8YLRW1q23F8OjCg84-ckcKuJpLfeQ-VumlDjL_85vSU8gbx5e89AxTfrWbWYqjD25zeNk95CKsnw_KIOAJ4Qr-91A1D94f6hyNopJLkmH39JqlrVD-2ObeQWN-q6ogcDK5eqaCMGjaMql4E7gVdqv_12SVclkC0BD4aIXJdzLApYcAd3uJG9KmHgSkC0WYB2One9LXsfRq4"/>
+<div class="absolute top-2 left-2 px-2 py-1 rounded bg-surface/80 backdrop-blur font-label-sm text-label-sm text-primary">
+          Fintech &amp; Banca Digital
+        </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Plataforma de Conciliación y Liquidaciones</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Sector Servicios Financieros B2B</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm text-body-sm">
+<div>
+<span class="text-primary font-medium">Problema:</span>
+<span class="text-on-surface-variant"> Procesos manuales de cuadre contable con retrasos de 48 horas e inconsistencias recurrentes.</span>
+</div>
+<div>
+<span class="text-primary font-medium">Mi rol:</span>
+<span class="text-on-surface-variant"> Diseño integral de arquitectura de eventos, modelado relacional y desarrollo del motor transaccional.</span>
+</div>
+<div>
+<span class="text-primary font-medium">Solución:</span>
+<span class="text-on-surface-variant"> Conciliación automatizada en tiempo real con 99.98% de precisión y reducción de tiempos de cierre a 4 minutos.</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Kafka</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">AWS</span>
+</div>
+</div>
+</div>
+<!-- Proyecto 2 -->
+<div class="rounded-xl bg-surface-container overflow-hidden flex flex-col">
+<div class="w-full h-44 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist warehouse management mobile tablet display showing route optimizations and freight logistics in muted dark graphite colors with silver accents and sharp typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjXyJAguEE4oNcIN-Cxrthsg7Rt2xsuHhV5BUXDhDPk5N54hTRGsb7GoJkKFBtDOBm7TBLcm8fY8oeL-BQBlrS7nF_-v2_OSx4OJxhucOuUENeQnUYzKcETYkZlVuUFfaY64LfAOhrM6fv9nHt8NrDq_npjZ5Bu9IT0Z90OXnbRVTIEA-WR0jaCQA1jHkboUFS3Fi6HqFE9z5en-HDPDFIF9ZoghUhdi0Kh-QAlM"/>
+<div class="absolute top-2 left-2 px-2 py-1 rounded bg-surface/80 backdrop-blur font-label-sm text-label-sm text-primary">
+          Logística &amp; Distribución
+        </div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary">Sistema Centralizado de Envíos y Trazabilidad</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Operador Logístico Nacional</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm text-body-sm">
+<div>
+<span class="text-primary font-medium">Problema:</span>
+<span class="text-on-surface-variant"> Múltiples transportistas sin API unificada, generando fallos de comunicación en última milla.</span>
+</div>
+<div>
+<span class="text-primary font-medium">Mi rol:</span>
+<span class="text-on-surface-variant"> Liderazgo técnico, especificación de API Gateway modular y desarrollo del portal para transportistas.</span>
+</div>
+<div>
+<span class="text-primary font-medium">Solución:</span>
+<span class="text-on-surface-variant"> Integración de 6 couriers bajo una única interfaz reactiva y tracking en vivo para clientes finales.</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">React Native</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Go</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Redis</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SOBRE MÍ -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Perfil profesional</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+        Sobre Julio Ortiz Pol
+      </h2>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md">
+<!-- Foto de Perfil y Encabezado Personal -->
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of software architect Julio Ortiz Pol, thoughtful analytical expression, wearing dark clothing against a clean dark grey studio background, high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm6LpixnvKTVNVnPbpBi82-9HK8NGGEenQvRh9dgeKkZTtOyRxG1WjSDMK2o6O1D1PCPdz8M10_0lXz4IxAgH0rwGRMU-kgi071eFjkS0NG4fl7I_pWtyiQtnH2K0VAtdiBnXrAM9TnLzBMLrzy9l51T_yBFcVUZLqrj_JNeSvfmeMImDK-ryv5MkSARSfmNi_zC7SpFruFSVj-sXnCfbXmCcrr4CNptOa4-ioynk"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Julio Ortiz Pol</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Arquitecto de Software &amp; Consultor</span>
+<span class="font-label-sm text-label-sm text-primary-container mt-1 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span>
+            Disponible para nuevos proyectos
+          </span>
+</div>
+</div>
+<!-- Trayectoria -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Cuento con más de una década liderando la conceptualización y despliegue de infraestructuras críticas en banca digital, plataformas fintech reguladas y startups tecnológicas en fase de aceleración.
+      </p>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-label-md">
+<span class="text-on-surface font-medium">Banca Digital &amp; Pagos</span>
+<span class="text-on-surface-variant">Sistemas de alta transaccionalidad</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-label-md">
+<span class="text-on-surface font-medium">Startups &amp; Scale-ups</span>
+<span class="text-on-surface-variant">MVPs estructurados para inversión</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-label-md">
+<span class="text-on-surface font-medium">Auditoría de Deuda Técnica</span>
+<span class="text-on-surface-variant">Optimización y escalado de bases</span>
+</div>
+</div>
+<!-- Enlaces y Documentos -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="h-11 px-space-md rounded bg-surface-container-high text-primary font-label-lg text-label-lg inline-flex items-center justify-between active:bg-surface-container-highest transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Ver perfil en LinkedIn</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-outline">open_in_new</span>
+</a>
+<a class="h-11 px-space-md rounded bg-surface-container-high text-primary font-label-lg text-label-lg inline-flex items-center justify-between active:bg-surface-container-highest transition-colors" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Descargar Currículum Vitae (PDF)</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6. CONTACTO DIRECTO -->
+<section class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Conversación inicial</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary font-medium">
+        Cuénteme qué quiere construir o mejorar.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Le responderé en menos de 24 horas laborables con una primera valoración objetiva y posibles vías de ejecución.
+      </p>
+</div>
+<!-- CTA de contacto directo destacado -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<a class="w-full h-12 rounded bg-primary-container text-on-primary font-label-lg text-label-lg font-medium inline-flex items-center justify-center gap-2 transition-colors active:bg-primary shadow-sm" href="mailto:julioortizpol@gmail.com?subject=Consulta%20sobre%20proyecto">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span>Hablemos de su proyecto</span>
+</a>
+<!-- Tarjeta de correo directo con botón de copiar -->
+<div class="flex items-center justify-between px-space-md py-3 rounded bg-surface-container-high">
+<span class="font-label-md text-label-md text-primary font-mono select-all" id="email-address-text">julioortizpol@gmail.com</span>
+<button aria-label="Copiar dirección de correo" class="p-1 text-on-surface-variant active:text-primary transition-colors flex items-center" id="copy-email-button" type="button">
+<span class="material-symbols-outlined text-[18px]" id="copy-icon">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">lock</span>
+<span>Trato confidencial y firma previa de NDA disponible si lo requiere.</span>
+</div>
+</section>
+</div>
+<script>
+  (function initEmailCopy() {
+    const btn = document.getElementById('copy-email-button');
+    const icon = document.getElementById('copy-icon');
+    const email = 'julioortizpol@gmail.com';
+    if (!btn || !icon) return;
+
+    btn.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = email;
+          textarea.style.position = 'fixed';
+          textarea.style.left = '-999999px';
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          document.execCommand('copy');
+          textarea.remove();
+        }
+        icon.textContent = 'done';
+        icon.classList.add('text-primary-container');
+        setTimeout(() => {
+          icon.textContent = 'content_copy';
+          icon.classList.remove('text-primary-container');
+        }, 2200);
+      } catch (err) {
+        window.location.href = 'mailto:' + email;
+      }
+    });
+  })();
+</script><footer class="mt-space-xl pt-space-lg pb-space-lg flex flex-col gap-space-md"><div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md"><a class="min-h-[44px] min-w-[44px] inline-flex items-center hover:text-on-surface transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a><a class="min-h-[44px] min-w-[44px] inline-flex items-center hover:text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a><a class="min-h-[44px] inline-flex items-center hover:text-on-surface transition-colors" href="mailto:julioortizpol@gmail.com">julioortizpol@gmail.com</a></div><div class="font-label-sm text-label-sm text-outline-variant">© 2025 Julio Ortiz Pol. Consultoría de Arquitectura de Software.</div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-colors text-primary font-semibold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Inicio</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-sm text-label-sm mt-0.5">Servicios</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="diagnostico" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-sm text-label-sm mt-0.5">Diagnóstico</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="contacto" href="#"><span class="material-symbols-outlined text-[20px]">mail</span><span class="font-label-sm text-label-sm mt-0.5">Contacto</span></a></div></nav></body></html>

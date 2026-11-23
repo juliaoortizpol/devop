@@ -15,9 +15,9 @@ export async function Navbar({ lang }: NavbarProps) {
   return (
     <ScrollNavWrapper>
       <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter h-full">
-        <HomeLogoLink href={`/${lang}`} label={logo} />
+        <HomeLogoLink href={lang === "es" ? "/dev" : "/dev/en"} label={logo} />
 
-        <NavLinks links={links} />
+        <NavLinks links={links} lang={lang} />
 
         <NavActions
           actions={actions}

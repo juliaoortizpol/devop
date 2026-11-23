@@ -10,7 +10,7 @@ interface HeroSectionProps {
 export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section className="relative flex min-h-[560px] items-center justify-center overflow-hidden px-gutter py-md md:min-h-[620px]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(207,188,255,0.14),transparent_34%),linear-gradient(180deg,rgba(20,18,24,0),#0f0d13_92%)]" />
+      <div className="absolute inset-0 bg-background" />
       <div className="relative z-10 mx-auto flex max-w-container-max flex-col items-center text-center">
         <div className="mb-sm inline-flex items-center gap-xs rounded-full border border-outline-variant/30 bg-surface-container-highest/50 px-xs py-1 text-label-sm font-label-sm text-primary">
           <span className="relative flex h-2 w-2">
@@ -37,7 +37,7 @@ export function HeroSection({ content }: HeroSectionProps) {
 
         <div className="mb-md flex w-full flex-col justify-center gap-md sm:w-auto sm:flex-row">
           <a
-            className="rounded-xl bg-gradient-to-r from-primary to-primary-container px-lg py-sm text-center font-headline-md text-on-primary shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/40"
+            className="rounded-xl bg-primary hover:bg-primary-container px-lg py-sm text-center font-headline-md text-on-primary shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             href="#contact"
           >
             {content.primaryCta}
